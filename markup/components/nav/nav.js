@@ -15,9 +15,7 @@ class Nav {
         this.$navTrigger.addEventListener( 'click', (e) => {
 
             if ( this.navOpen ) {
-
                 this.closeNav();
-
             } else {
                 this.openNav();
             }
@@ -27,16 +25,12 @@ class Nav {
         window.addEventListener( 'resize', (e) => {
             this.resizeNav();
         });
-
-
-
     }
 
     openNav() {
-
         this.navOpen = true;
 
-        if ( $(window).width() > '960' ) {
+        if ( window.innerWidth > '960' ) {
             this.$nav.classList.remove('nav_open');
             this.$page.classList.remove('page_nav_open');
         } else {
@@ -49,7 +43,6 @@ class Nav {
     closeNav() {
         this.$nav.classList.remove('nav_open');
         this.$page.classList.remove('page_nav_open');
-
         this.navOpen = false;
     }
 
@@ -59,13 +52,7 @@ class Nav {
             this.$page.classList.remove('page_nav_open');
         }
     }
-
-
-
     // methods
-
-
 }
-
 
 export default Nav;

@@ -188,7 +188,7 @@
 
 
     .request__entry {
-        padding-right: 10px;
+        padding-right: 8px;
         @include mq($small) {
             padding-right: 30px;
             max-width: 51.4%;
@@ -232,6 +232,16 @@
         }
 
         p {
+            margin-bottom: 15px;
+            @include mq($small) {
+                margin-bottom: 20px;
+            }
+
+            @include mq($medium) {
+
+            }
+
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -242,7 +252,7 @@
     .request__form-w {
         position: relative;
         // bottom: -50px;
-        top: 28px;
+        top: 50px;
         max-width: 575px;
         height: 356px;
         background-color: #fff;
@@ -381,6 +391,29 @@
             height: 172px;
         }
 
+    }
+
+    .request__icon_third {
+        top: -266px;
+        right: -30px;
+        width: 59px;
+        height: 86px;
+
+        @include mq($small) {
+            display: none;
+        }
+
+    }
+
+    .request__icon_fourth {
+        top: -50px;
+        left: -28px;
+        width: 169px;
+        height: 147px;
+
+        @include mq($small) {
+            display: none;
+        }
     }
 
 }

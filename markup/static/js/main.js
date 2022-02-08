@@ -1,8 +1,8 @@
 import svg4everybody from 'svg4everybody';
 import LazyLoad from 'vanilla-lazyload';
-import header from '../../components/header/header';
+// import header from '../../components/header/header';
+import { casesSlider, casesListToggle } from '../../components/cases/cases';
 import Nav from '../../components/nav/nav';
-import { casesSlider } from '../../components/cases/cases';
 // import tabs from '../../components/tabs/tabs';
 
 // import {pageWidget} from '../../components/page-widget/page-widget';
@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
         Nav
     */
 
-    // new Nav();
+    const nav = new Nav();
 
     /*
        Slider
@@ -52,6 +52,9 @@ document.addEventListener('DOMContentLoaded', function (event) {
     const $casesSlider = document.querySelector('.cases__slider');
     if ( $casesSlider ) {
         casesSlider();
+
+        // casesListToggle();
+
     }
 
 
