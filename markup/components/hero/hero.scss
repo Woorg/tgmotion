@@ -1,0 +1,101 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    &__image {
+        z-index: -1;
+        position: absolute;
+        top: -24px;
+        left: 50%;
+        width: 375px;
+        height: 253px;
+        display: block;
+        transform: translateX(-50%);
+        @include mq($small) {
+            top: 9px;
+            left: calc(50% + 10px);
+            width: 1023px;
+            height: 411px;
+        }
+
+        @include mq($medium) {
+            top: 32px;
+            left: 50%;
+            width: 1701px;
+            height: 722px;
+        }
+
+        @include mq($xlarge) {
+            top: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include mq($xlarge) {
+
+            }
+        }
+    }
+
+    &__container {
+        padding-top: 236px;
+        padding-bottom: 0;
+        text-align: center;
+        color: #222;
+        font-family: $sfpro;
+
+        @include mq($small) {
+            padding-top: 56px;
+            padding-bottom: 65px;
+        }
+
+        @include mq($medium) {
+            padding-top: 116px;
+            padding-bottom: 130px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 15px;
+
+        @include mq($small) {
+            margin-bottom: 30px;
+        }
+
+        @include mq($medium) {
+        }
+    }
+
+    &__text {
+        margin: auto;
+        max-width: 510px;
+        font-weight: normal;
+        font-size: 12px;
+        line-height: 1.4;
+
+        @include mq($small) {
+            font-size: 14px;
+        }
+
+        @include mq($medium) {
+            max-width: 744px;
+            @include font-size(20px);
+        }
+
+    }
+
+    &__button {
+        margin-top: 40px;
+        width: 100%;
+        @include mq($small) {
+            margin-top: 50px;
+            width: auto;
+        }
+
+        @include mq($medium) {
+        }
+
+    }
+
+}

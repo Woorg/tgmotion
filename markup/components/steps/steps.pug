@@ -1,0 +1,45 @@
+mixin steps(data)
+    section.steps
+        .steps__container.container
+            h2.steps__title.title.title_reg Выстраиваем <span>эффективный</span> email-маркетинг в 4 шага
+            ul.steps__steps
+                li.steps__step.steps__step_1
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-1-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Подробный анализ
+                            .steps__step-text Погружаемся в специфику вашего бизнеса: изучаем ваш ассортимент, покупательскую активность, текущую воронку продаж и весь путь клиента от первого касания до покупки
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-1-side-icon', className: 'steps__side-icon'})
+
+
+                li.steps__step.steps__step_2
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-2-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Разрабатываем детальную стратегию email-маркетинга
+                            .steps__step-text Определим целевую аудиторию и разобьем ее на сегменты, которые будут получать персонализированные письма в нужный момент времени, составим контент-план, который будет состоять из регулярных и триггерных писем, что позволит всегда быть на связи с клиентами и вовлекать их в совершение покупок
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-2-side-icon', className: 'steps__side-icon'})
+
+                li.steps__step.steps__step_3
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-3-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Внедряем разработанную стратегию
+                            .steps__step-text Разработаем шаблоны писем, создадим привлекательный дизайн в вашем фирменном стиле и сверстаем готовые письма, установим формы подписок на сайте, подготовим контент-план, интегрируем игровые механики
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-3-side-icon', className: 'steps__side-icon'})
+
+                li.steps__step.steps__step_4
+                    .steps__w
+                        .steps__step-quant
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-4-icon', className: 'steps__step-icon'})
+                        .steps__step-entry
+                            .steps__step-title Анализ результатов
+                            .steps__step-text Проанализируем результаты и подготовим отчетность в рамках каждого проекта по отдельным отчетным периодам
+
+                        != pugHelpers.Icon.call(locals, {iconName: 'step-4-side-icon', className: 'steps__side-icon'})

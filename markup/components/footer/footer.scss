@@ -1,0 +1,155 @@
+.footer {
+    background-color: #191c1f;
+    &__container {
+        padding-top: 96px;
+        padding-bottom: 40px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        @include mq($small) {
+            padding-top: 52px;
+
+        }
+
+        @include mq($medium) {
+            padding-top: 70px;
+            padding-bottom: 40px;
+        }
+
+    }
+
+    &__side {
+
+    }
+
+    &__logo {
+        max-width: 110px;
+        width: 100%;
+        display: flex;
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            max-width: 140px;
+        }
+
+    }
+
+    &__address {
+        margin-top: 5px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: normal;
+
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            margin-top: 18px;
+            font-size: 14px;
+        }
+
+    }
+
+    &__contacts {
+        margin-top: 10px;
+        margin-left: auto;
+        text-align: right;
+
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            margin-top: 24px;
+        }
+
+    }
+
+    &__social {
+        color: rgba(255, 255, 255, .5);
+    }
+
+    &__links {
+        margin-top: 12px;
+
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            margin-top: 16px;
+        }
+
+    }
+
+    &__link {
+        margin-left: 30px;
+        color: #fff;
+        font-size: 12px;
+        font-weight: normal;
+
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        &:hover {
+            color: rgba(255, 255, 255, .8);
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+    &__bottom {
+        position: relative;
+        margin-top: 18px;
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: rgba(255, 255, 255, .5);
+        font-size: 9px;
+        @include mq($small) {
+
+        }
+
+        @include mq($medium) {
+            margin-top: 35px;
+            padding-top: 30px;
+            font-size: 12px;
+
+        }
+
+        &:after {
+            position: absolute;
+            top: 0;
+            left: -2000px;
+            right: -2000px;
+            content: '';
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+    }
+
+    &__policy {
+        &:hover {
+            color: rgba(255, 255, 255, .8);
+        }
+    }
+
+    &__copyright {
+    }
+
+}
