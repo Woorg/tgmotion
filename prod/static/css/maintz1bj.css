@@ -3073,6 +3073,7 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    height: 554px;
   }
 }
 
@@ -3105,7 +3106,7 @@ a:hover {
 
 .cases__thumb {
   display: none;
-  height: 554px;
+  height: 0;
 }
 
 .cases__item {
@@ -3134,7 +3135,6 @@ a:hover {
 
 @media (min-width: 960px) {
   .cases__item {
-    height: 554px;
     overflow: initial;
   }
 }
@@ -3154,6 +3154,7 @@ a:hover {
     margin-right: 1px;
     margin-left: 1px;
     max-width: 48.5%;
+    min-height: 500px;
     height: 100%;
     border-radius: 5px;
   }
@@ -3166,6 +3167,7 @@ a:hover {
     padding-bottom: 50px;
     padding-left: 40px;
     max-width: 50.4%;
+    min-height: 650px;
     overflow: initial;
   }
 }
@@ -3173,6 +3175,7 @@ a:hover {
 .cases__side:nth-child(2) {
   padding-top: 26px;
   border-radius: 0 0 5px 5px;
+  overflow: hidden;
 }
 
 @media (min-width: 640px) {
@@ -3337,6 +3340,12 @@ a:hover {
   display: none;
 }
 
+@media (min-width: 640px) {
+  .cases__list-item:nth-child(n + 2) {
+    display: block;
+  }
+}
+
 .cases__more {
   margin-top: 35px;
   padding-right: 20px;
@@ -3356,6 +3365,8 @@ a:hover {
     padding-right: 30px;
     padding-left: 30px;
     width: auto;
+    background: transparent;
+    color: #3976f4;
   }
 }
 
@@ -3373,6 +3384,13 @@ a:hover {
 .cases__more:hover {
   background-color: transparent;
   color: #3976f4;
+}
+
+@media (min-width: 640px) {
+  .cases__more:hover {
+    background-color: #3976f4;
+    color: #fff;
+  }
 }
 
 .form__row {

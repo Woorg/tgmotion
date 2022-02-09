@@ -124,6 +124,7 @@
 
             @include mq($medium) {
                 display: flex;
+                height: 554px;
             }
 
             &:after {
@@ -159,7 +160,8 @@
 
     &__thumb {
         display: none;
-        height: 554px;
+        height: 0;
+
     }
 
     &__item {
@@ -177,7 +179,7 @@
         }
 
         @include mq($medium) {
-            height: 554px;
+            // min-height: 554px;
             overflow: initial;
         }
 
@@ -200,6 +202,7 @@
             margin-right: 1px;
             margin-left: 1px;
             max-width: 48.5%;
+            min-height: 500px;
             height: 100%;
             border-radius: 5px;
         }
@@ -210,6 +213,7 @@
             padding-bottom: 50px;
             padding-left: 40px;
             max-width: 50.4%;
+            min-height: 650px;
             overflow: initial;
         }
 
@@ -217,10 +221,12 @@
             padding-top: 26px;
             // padding-left: 15px;
             border-radius: 0 0 5px 5px;
-
+            overflow: hidden;
             @include mq($small) {
                 // padding-left: 20px;
                 max-width: 50.8%;
+                // height: 100vh;
+                // min-height: 100%;
                 border-radius: 5px;
 
             }
@@ -362,6 +368,10 @@
         &:nth-child(n + 2) {
             display: none;
 
+            @include mq($small) {
+                display: block;
+            }
+
 
 
         }
@@ -384,6 +394,10 @@
             padding-right: 30px;
             padding-left: 30px;
             width: auto;
+            background: transparent;
+            color: #3976f4;
+
+
         }
 
         @include mq($medium) {
@@ -399,7 +413,15 @@
         &:hover {
             background-color: transparent;
             color: #3976f4;
+
+            @include mq($small) {
+                background-color: #3976f4;
+                color: #fff;
+            }
+
         }
+
+
 
     }
 
