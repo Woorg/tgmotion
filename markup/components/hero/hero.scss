@@ -19,7 +19,7 @@
 
         @include mq($medium) {
             top: 32px;
-            left: 50%;
+            left: calc(50% - 20px);
             width: 1701px;
             height: 722px;
         }

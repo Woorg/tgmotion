@@ -1362,7 +1362,7 @@ a:hover {
 @media (min-width: 960px) {
   .hero__image {
     top: 32px;
-    left: 50%;
+    left: calc(50% - 20px);
     width: 1701px;
     height: 722px;
   }
@@ -2737,7 +2737,7 @@ a:hover {
 
 @media (min-width: 640px) {
   .know__item_6 .know__icon {
-    top: 3px;
+    top: -15px;
     right: auto;
     left: 15px;
   }
@@ -2900,8 +2900,9 @@ a:hover {
 
 @media (min-width: 640px) {
   .trust__list {
-    margin-right: 0;
-    margin-left: 0;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -2909,6 +2910,9 @@ a:hover {
   .trust__list {
     margin-right: -10px;
     margin-left: -10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -2933,13 +2937,8 @@ a:hover {
 @media (min-width: 640px) {
   .trust__item {
     margin-bottom: 30px;
-    padding-right: 0;
-    padding-left: 0;
-    max-width: 16.8%;
+    max-width: 20%;
     height: auto;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
   }
 }
 
@@ -3001,16 +3000,20 @@ a:hover {
     margin-top: -8px;
     padding-top: 67px;
     padding-bottom: 0;
-    overflow: hidden;
   }
 }
 
 @media (min-width: 960px) {
   .cases__slider {
     margin-top: 0;
+    padding-top: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .cases__slider {
     margin-right: -20px;
     margin-left: -20px;
-    padding-top: 0;
     overflow: initial;
   }
 }
@@ -3034,7 +3037,7 @@ a:hover {
   }
 }
 
-@media (min-width: 960px) {
+@media (min-width: 1200px) {
   .cases__slide {
     padding-right: 20px;
     padding-left: 20px;

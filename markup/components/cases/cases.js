@@ -16,21 +16,23 @@ export function casesSlider() {
         observeSlideChildren: true,
         observeParents: true,
         resizeObserver: true,
+        waitForTransition: true,
+        speed: 600,
         breakpoints: {
             0: {
                 slidesPerView: 1,
                 spaceBetween: 10,
                 loop: true,
-                autoHeight: true,
-                observer: true,
-                observeSlideChildren: true,
-                observeParents: true,
-                resizeObserver: true,
                 pagination: {
                     el: '.swiper-pagination',
                     type: 'bullets',
                     clickable: true,
                 },
+            },
+            768: {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+                loop: false,
             },
             960: {
                 loop: false,

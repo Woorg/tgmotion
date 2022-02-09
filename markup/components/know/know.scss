@@ -220,7 +220,7 @@
             height: 46px;
 
             @include mq($small) {
-                top: 3px;
+                top: -15px;
                 right: auto;
                 left: 15px;
             }
