@@ -298,7 +298,8 @@ pseudo:before, pseudo:after {
   line-height: 1.2;
 }
 
-.title span {
+.title span,
+.title i {
   color: #3976f4;
 }
 
@@ -330,7 +331,6 @@ pseudo:before, pseudo:after {
 @media (min-width: 640px) {
   .title_reg {
     font-size: 36px;
-    line-height: 1;
   }
 }
 
@@ -1406,6 +1406,15 @@ a:hover {
 
 .hero__title {
   margin-bottom: 15px;
+}
+
+.hero__title span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 640px) {
@@ -2985,12 +2994,14 @@ a:hover {
 
 .cases__slider {
   position: relative;
+  padding-bottom: 50px;
 }
 
 @media (min-width: 640px) {
   .cases__slider {
     margin-top: -8px;
     padding-top: 67px;
+    padding-bottom: 0;
     overflow: hidden;
   }
 }
@@ -3394,6 +3405,28 @@ a:hover {
   }
 }
 
+.cases__pagination {
+  padding-top: 20px;
+  width: 100%;
+}
+
+.cases .swiper-pagination-bullet {
+  margin-right: 7px;
+  width: 6px;
+  height: 6px;
+  background-color: #3976f4;
+  opacity: 0.4;
+}
+
+.cases .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
+.cases .swiper-pagination-bullet-active {
+  background-color: #3976f4;
+  opacity: 1;
+}
+
 .form__row {
   margin-bottom: 14px;
   width: 100%;
@@ -3436,6 +3469,7 @@ a:hover {
 .form__field {
   margin-bottom: 32px;
   padding-left: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3451,6 +3485,7 @@ a:hover {
   .form__field {
     margin-right: 20px;
     margin-bottom: 0;
+    width: auto;
   }
 }
 

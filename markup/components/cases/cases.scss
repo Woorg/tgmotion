@@ -31,9 +31,11 @@
 
     &__slider {
         position: relative;
+        padding-bottom: 50px;
         @include mq($small) {
             margin-top: -8px;
             padding-top: 67px;
+            padding-bottom: 0;
             overflow: hidden;
         }
 
@@ -421,12 +423,28 @@
 
         }
 
-
-
     }
 
 
+    &__pagination {
+        padding-top: 20px;
+        width: 100%;
+    }
 
+    .swiper-pagination-bullet {
+        margin-right: 7px;
+        width: 6px;
+        height: 6px;
+        background-color: #3976f4;
+        opacity: 0.4;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 
+    .swiper-pagination-bullet-active {
+        background-color: #3976f4;
+        opacity: 1;
+    }
 
 }

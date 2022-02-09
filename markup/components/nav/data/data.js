@@ -1,5 +1,5 @@
 nav: {
-    primaryList: [
+    primaryListRu: [
         {
             title: 'Услуги',
             href: '#services',
@@ -25,6 +25,34 @@ nav: {
             href: '#blog',
             itemClassMod: ''
         },
+    ],
+    primaryListEn: [
+        {
+            title: 'Services',
+            href: '#services',
+            itemClassMod: ''
+        },
+        {
+            title: 'Cases',
+            href: '#cases',
+            itemClassMod: '',
+        },
+        {
+            title: 'About Us',
+            href: '#about',
+            itemClassMod: '',
+        },
+        {
+            title: 'Vacancies',
+            href: '#jobs',
+            itemClassMod: '',
+        },
+        {
+            title: 'Blog',
+            href: '#blog',
+            itemClassMod: ''
+        },
 
     ]
+
 }

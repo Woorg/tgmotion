@@ -26,12 +26,14 @@
     &__field {
         margin-bottom: 32px;
         padding-left: 0;
+        width: 100%;
         display: flex;
         align-items: center;
         flex-grow: 1;
         @include mq($small) {
             margin-right: 20px;
             margin-bottom: 0;
+            width: auto;
         }
 
         @include mq($medium) {

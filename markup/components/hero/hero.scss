@@ -59,6 +59,11 @@
     &__title {
         margin-bottom: 15px;
 
+        span {
+            display: flex;
+            justify-content: center;
+        }
+
         @include mq($small) {
             margin-bottom: 30px;
         }

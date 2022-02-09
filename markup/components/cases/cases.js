@@ -1,10 +1,10 @@
-import Swiper, { EffectFade } from 'swiper';
+import Swiper, { EffectFade, Pagination } from 'swiper';
 
 
 
 export function casesSlider() {
     let mySwiper = new Swiper('.cases__slider', {
-        modules: [EffectFade],
+        modules: [EffectFade, Pagination],
         a11y: true,
         keyboardControl: true,
         grabCursor: true,
@@ -26,6 +26,11 @@ export function casesSlider() {
                 observeSlideChildren: true,
                 observeParents: true,
                 resizeObserver: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
             },
             960: {
                 loop: false,
