@@ -1258,7 +1258,7 @@ a:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #fff;
+  background: #f3f4f5;
 }
 
 .nav_open .nav__trigger {
