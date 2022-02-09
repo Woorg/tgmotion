@@ -3051,6 +3051,25 @@ a:hover {
   }
 }
 
+.cases .swiper-slide-next .cases__item,
+.cases .swiper-slide-prev .cases__item,
+.cases .swiper-slide-duplicate .cases__item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 92%;
+  border-radius: 5px;
+}
+
+@media (min-width: 640px) {
+  .cases .swiper-slide-next .cases__item,
+  .cases .swiper-slide-prev .cases__item,
+  .cases .swiper-slide-duplicate .cases__item {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: auto;
+  }
+}
+
 @media (min-width: 960px) {
   .cases .swiper-slide-next .cases__item,
   .cases .swiper-slide-prev .cases__item,

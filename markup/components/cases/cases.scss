@@ -97,8 +97,14 @@
 
         // width: auto;
         .cases__item {
-
+            padding-top: 20px;
+            padding-bottom: 20px;
+            height: 92%;
+            border-radius: 5px;
             @include mq($small) {
+                padding-top: 0;
+                padding-bottom: 0;
+                height: auto;
             }
 
             @include mq($medium) {
@@ -143,6 +149,15 @@
             }
         }
     }
+
+    // .swiper-slide-active {
+    //      .cases__item {
+    //         height: 100%;
+    //         @include mq($small) {
+    //             height: auto;
+    //         }
+    //     }
+    // }
 
     .swiper-slide-next {
         .cases__thumb {
