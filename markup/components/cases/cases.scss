@@ -83,14 +83,14 @@
     .swiper-slide-prev,
     .swiper-slide-duplicate {
         .cases__item {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            height: 92%;
+            // padding-top: 20px;
+            // padding-bottom: 20px;
+            // height: 92%;
             border-radius: 5px;
             @include mq($small) {
-                padding-top: 0;
-                padding-bottom: 0;
-                height: auto;
+                // padding-top: 0;
+                // padding-bottom: 0;
+                // height: auto;
             }
             @include mq($medium) {
                 display: none;
