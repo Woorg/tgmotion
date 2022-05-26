@@ -1,16 +1,16 @@
 mixin request(data)
-    .request
+    .request&attributes(attributes)#request
         .request__container.container
             .request__entry
                 h2.request__title.title.title_reg Оставьте заявку
                 .request__text Мы свяжемся с вами и ответим на все вопросы
 
-            form.request__form.form
+            form.request__form.form.form_ru(action="#", method="post")
                 .form__row
                     .form__field
-                        input.form__input(type="text" name="" value="" placeholder="Имя")
+                        input.form__input(type="text" name="Имя" value="" placeholder="Имя" required)
                     .form__field
-                        input.form__input(type="text" name="" value="" placeholder="Телефон")
+                        input.form__input.form__input_phone(type="text" name="Телефон" value="" placeholder="Телефон" required)
 
                 .form__bottom
                     input.form__submit.button.button_filled_white(type="submit" value="Обсудить проект")
@@ -27,18 +27,18 @@ mixin request(data)
             img.lazy.lazy( src="static/img/general/placeholder-image.webp", alt="Изображение", data-src="static/img/general/request-icon@2x.png")
 
 mixin request-eng(data)
-    .request
+    .request&attributes(attributes)#request
         .request__container.container
             .request__entry
                 h2.request__title.title.title_reg Leave a request
                 .request__text We will get in touch with you and answer <br/> all your questions
 
-            form.request__form.form
+            form.request__form.form.form_en(action="#", method="post")
                 .form__row
                     .form__field
-                        input.form__input(type="text" name="" value="" placeholder="Name")
+                        input.form__input(type="text" name="Name" value="" placeholder="Name" required)
                     .form__field
-                        input.form__input(type="text" name="" value="" placeholder="Phone number")
+                        input.form__input.form__input_phone(type="text" name="Phone" value="" placeholder="Phone number" required)
 
                 .form__bottom
                     input.form__submit.button.button_filled_white(type="submit" value="Discuss your project")
@@ -72,12 +72,12 @@ mixin request-second(data)
                     .request__form-title Оставьте заявку
                     .request__form-text Мы свяжемся с вами и ответим на все вопросы
 
-                    form.request__form-object.form.form_second
+                    form.request__form-object.form.form_second.form_second_ru(action="#", method="post" )
                         .form__row
                             .form__field
-                                input.form__input(type="text" name="" value="" placeholder="Имя")
+                                input.form__input(type="text" name="Имя" value="" placeholder="Имя" required)
                             .form__field
-                                input.form__input(type="text" name="" value="" placeholder="Телефон")
+                                input.form__input.form__input_phone(type="text" name="Телефон" value="" placeholder="Телефон" required)
 
                         .form__bottom
                             .form__note Нажимая кнопку «обсудить проект», вы соглашаетесь с политикой обработки персональных данных.
@@ -124,12 +124,12 @@ mixin request-second-eng(data)
                     .request__form-title Leave a request
                     .request__form-text We will get in touch with you and answer all your questions
 
-                    form.request__form-object.form.form_second
+                    form.request__form-object.form.form_second.form_second_en(action="#", method="post")
                         .form__row
                             .form__field
-                                input.form__input(type="text" name="" value="" placeholder="Name")
+                                input.form__input(type="text" name="Name" value="" placeholder="Name" required)
                             .form__field
-                                input.form__input(type="text" name="" value="" placeholder="Phone number")
+                                input.form__input.form__input_phone(type="text" name="Phone" value="" placeholder="Phone number" required)
 
                         .form__bottom
                             .form__note By clicking the "Discuss your project" button, you agree to the personal data processing policy.

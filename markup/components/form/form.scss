@@ -24,6 +24,7 @@
     }
 
     &__field {
+        position: relative;
         margin-bottom: 32px;
         padding-left: 0;
         width: 100%;
@@ -45,6 +46,18 @@
             margin-right: 0;
             margin-bottom: 0;
         }
+
+        .just-validate-error-label {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            font-size: 12px;
+            @include mq($medium) {
+                font-size: 13px;
+
+            }
+        }
+
     }
 
     &__input {
@@ -58,9 +71,11 @@
         font-family: $montserrat;
         font-size: 12px;
         font-weight: normal;
-
+        caret-color: white;
         @include placeholder() {
             color: #fff;
+            caret-color: white;
+
         }
 
         @include mq($small) {
@@ -74,6 +89,18 @@
             font-size: 14px;
 
         }
+
+        &.just-validate-error-field {
+            border-bottom: 1px solid red;
+
+            @include placeholder() {
+                color: red;
+            }
+
+        }
+
+
+
     }
 
 
@@ -127,6 +154,19 @@
 
     }
 
+    &__send-message {
+        margin-top: 20px;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.5;
+
+        @include mq($medium) {
+            font-size: 14px;
+
+        }
+
+    }
+
 }
 
 
@@ -154,15 +194,36 @@
         &:last-child {
             margin-bottom: 0;
         }
+
     }
 
     .form__input {
         border-bottom: 1px solid rgba(0, 0, 0, .1);
         color: rgba(25, 28, 31, .5);
+        caret-color: currentColor;
         @include placeholder() {
             color: rgba(25, 28, 31, .5);
+            caret-color: currentColor;
 
         }
+
+        &.just-validate-error-field {
+            border-bottom: 1px solid red;
+
+            @include placeholder() {
+                color: red;
+            }
+
+        }
+
+        // &.just-validate-success-field {
+        //     border-bottom: 1px solid green;
+
+        //     @include placeholder() {
+        //         color: green;
+        //     }
+
+        // }
 
     }
 
@@ -214,4 +275,20 @@
         }
 
     }
+
+
+    .form__send-message {
+        margin-top: 6px;
+        font-size: 12px;
+        font-weight: normal;
+        line-height: 1.5;
+
+        @include mq($medium) {
+            margin-top: 20px;
+            font-size: 14px;
+
+        }
+
+    }
+
 }

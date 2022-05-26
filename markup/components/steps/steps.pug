@@ -1,5 +1,5 @@
 mixin steps(data)
-    section.steps
+    section.steps&attributes(attributes)
         .steps__container.container
             h2.steps__title.title.title_reg Выстраиваем <span>эффективный</span> email-маркетинг в 4 шага
             ul.steps__steps
@@ -46,7 +46,7 @@ mixin steps(data)
 
 
 mixin steps-eng(data)
-    section.steps.steps_eng
+    section.steps.steps_eng&attributes(attributes)
         .steps__container.container
             h2.steps__title.title.title_reg Building <span>effective</span> <br/>email marketing in 4 steps
             ul.steps__steps
