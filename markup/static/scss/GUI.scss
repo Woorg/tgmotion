@@ -1,348 +1,438 @@
 .title {
-    color: #222;
-    font-family: $sfpro;
-    font-size: 34px;
+  font-family: $sfpro;
+  font-size: 85px;
+  font-weight: bold;
+
+  @include mq($small) {
+    @include font-size(85px);
+  }
+
+  @include mq($medium) {
+
+  }
+
+  &_secondary {
     font-weight: 600;
-    line-height: 1.2;
-    span,
-    i {
-        color: #3976f4;
-    }
+    font-size: 48px;
+    line-height: 1.19;
 
     @include mq($small) {
-        font-size: 58px;
-        line-height: 1;
+      @include font-size(48px);
     }
 
     @include mq($medium) {
-        @include font-size(100px);
-        line-height: 1.1;
+
     }
 
-    &_reg {
-        font-size: 22px;
-        line-height: 1.2;
+    span {
+      padding-right: 10px;
+      color: $color-blue;
+    }
+  }
 
-        @include mq($small) {
-            font-size: 36px;
-            // line-height: 1.1;
-        }
+  &_third {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 1.187;
 
-        @include mq($medium) {
-            @include font-size(50px);
-        }
+    @include mq($small) {
+      @include font-size(48px);
     }
 
-    &_reg_sec {
-        font-size: 28px;
-        line-height: 1.2;
-        @include mq($small) {
-            font-size: 36px;
-            line-height: 1;
-        }
+    @include mq($medium) {
 
-        @include mq($medium) {
-            @include font-size(50px);
-        }
     }
+
+  }
 
 }
 
+.buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0 13px;
+}
+
 .button {
-    @include resetbutton();
-    border: 1px solid #3976f4;
-    padding-top: 9px;
-    padding-right: 30px;
-    padding-bottom: 9px;
-    padding-left: 30px;
-    height: 48px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #3976f4;
-    color: #fff;
-    font-family: $montserrat;
-    font-weight: 600;
-    @include font-size(12px);
+  @include resetbutton();
+  border: solid 2px $color-blue;
+  padding-top: 18px;
+  padding-right: 37px;
+  padding-bottom: 18px;
+  padding-left: 37px;
+  height: 57px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-blue;
+  color: $color-white;
+  @include font-size(18px);
+  font-weight: bold;
+  line-height: 1.37;
+  white-space: nowrap;
+  cursor: pointer;
+  border-radius: 6px;
+  @include tr(.3s ease);
 
-    line-height: 1;
-    text-align: center;
-    letter-spacing: -0.06px;
-    border-radius: 36px;
+  @include mq($small) {}
+
+  @include mq($medium) {
+    @include font-size(18px);
+
+  }
+
+  &:hover {
+    background-color: transparent;
+    color: $color-black;
     @include tr(.3s ease);
-
-    @include mq($small) {
-        padding-right: 30px;
-        padding-left: 30px;
-        font-size: 12px;
-        letter-spacing: -0.06px;
-    }
-
-    @include mq($medium) {
-        padding-right: 48px;
-        padding-left: 48px;
-        @include font-size(14px);
-        letter-spacing: -0.07px;
-
-    }
-
-
-
-    &:hover {
-        background-color: transparent;
-        color: #3976f4;
-        @include tr(.3s ease);
-    }
+  }
 
 }
 
 .button_stroke {
-    padding-right: 14px;
-    padding-left: 17px;
-    height: 36px;
+  background-color: transparent;
+  color: $color-black;
+
+  @include mq($medium) {
+
+  }
+
+  &:hover {
+    background-color: $color-blue;
+    color: $color-white;
+    @include tr(.3s ease);
+  }
+}
+
+.circle {
+  position: absolute;
+  background: $color-soft;
+  border-radius: 50%;
+}
+
+
+.slider {
+
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 7px;
+  }
+
+  &__button {
+    position: relative;
+    top: auto;
+    right: auto;
+    left: auto;
+    @include resetbutton();
+    width: 64px;
+    height: 64px;
     background: transparent;
-    color: #3976f4;
-    font-family: $sfpro;
-    @include font-size(12px);
-    font-weight: 500;
-    letter-spacing: -0.06px;
+    fill: transparent;
+    opacity: 1;
+    transform: none;
+    border-radius: 50%;
+    &::after {
+      display: none;
+    }
 
-    @include mq($medium) {
-        padding-right: 37px;
-        padding-left: 37px;
+    circle {
+      // fill: transparent;
+      @include tr(.3s ease);
     }
 
     &:hover {
-        background-color: #3976f4;
-        color: #fff;
+      box-shadow: 0px 12px 34px rgba(78, 202, 237, 0.23);
+      circle {
+        fill: $color-blue;
         @include tr(.3s ease);
-    }
-}
-
-.button_filled_white {
-    border: 1px solid #3976f4;
-    padding-right: 32px;
-    padding-left: 33px;
-    background-color: #fff;
-    color: #3976f4;
-    @include font-size(12px);
-    letter-spacing: -0.06px;
-
-    @include mq($small) {
-
+      }
     }
 
-    @include mq($medium) {
-        padding-right: 40px;
-        padding-left: 40px;
-        @include font-size(14px);
-        letter-spacing: -0.07px;
-    }
+  }
 
-    &:hover {
-        border: 1px solid #fff;
-        color: #3976f4;
-        background-color: transparent;
-        color: #fff;
+  &__button_prev {
+    transform: rotate(180deg);
+    &.swiper-button-disabled {
+      circle {
+        fill: transparent;
         @include tr(.3s ease);
+      }
+      fill: transparent;
+      opacity: 1;
     }
-}
+  }
 
+  &__button_next {
+    &.swiper-button-disabled {
+      circle {
+        fill: transparent;
+        @include tr(.3s ease);
+      }
+
+      fill: transparent;
+      opacity: 1;
+    }
+
+  }
+
+  &__pagination {
+    margin-top: 20px;
+    position: static;
+    display: flex;
+    justify-content: center;
+  }
+
+  .swiper-pagination-bullet {
+    margin-right: 10px;
+    width: 8px;
+    height: 8px;
+    background: $color-darkblue;
+    opacity: 1;
+    border-radius: 50%;
+    @include tr(.3s ease);
+    &:last-child {
+      margin-right: 0;
+    }
+
+  }
+
+  .swiper-pagination-bullet-active {
+    background: $color-blue;
+    @include tr(.3s ease);
+
+  }
+
+
+
+}
 
 
 .text {
-    color: #000;
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: #334756;
-        font-weight: bold;
-        line-height: 1.2;
+  // color: #000;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    // color: #334756;
+    // font-family: $playfair;
+    font-weight: 500;
+    letter-spacing: 1.65px;
+    line-height: 1.2;
+  }
+
+  h1 {
+    @include margin-bottom(10px);
+    font-size: 45px;
+
+    @include mq($medium) {
+      @include margin-bottom(20px);
+      @include font-size(55px);
+
+    }
+  }
+
+  h2 {
+    font-size: 35px;
+    line-height: 1.2;
+    letter-spacing: 1.05px;
+
+    @include mq($small) {
+      @include font-size(40px);
+
     }
 
-    h1 {
-        @include margin-bottom(10px);
-        @include font-size(18px);
-
-        @include mq($medium) {
-            @include margin-bottom(20px);
-            @include font-size(32px);
-
-        }
+    @include mq($medium) {
+      // @include font-size(50px);
     }
 
-    figure {
-        @include margin-bottom(10px);
+  }
 
-        @include mq($medium) {
-            @include margin-bottom(56px);
-        }
+
+
+  figure {
+    @include margin-bottom(10px);
+
+    @include mq($medium) {
+      @include margin-bottom(56px);
+    }
+  }
+
+  a {
+    color: #086de0;
+    text-decoration: none;
+
+    &:hover {
+      color: darken(#086de0, 10);
+
     }
 
-    a {
-        color: #086de0;
-        text-decoration: none;
+    &.button_style_important {
+      @include margin-top(28px);
+      @include margin-bottom(30px);
+      color: #fff;
 
-        &:hover {
-            color: darken(#086de0, 10);
-
-        }
-
-        &.button_style_important {
-            @include margin-top(28px);
-            @include margin-bottom(30px);
-            color: #fff;
-            @include mq($medium) {
-                @include margin-top(28px);
-                @include margin-bottom(20px);
-            }
-        }
-    }
-
-
-    p {
+      @include mq($medium) {
         @include margin-top(28px);
-        @include margin-bottom(15px);
+        @include margin-bottom(20px);
+      }
+    }
+  }
 
-        color: #000;
-        font-weight: normal;
-        // font-family: $inter;
-        @include font-size(16px);
-        line-height: 1.4;
 
-        @include mq($medium) {
-            @include margin-top(18px);
-            @include margin-bottom(18px);
-        }
+  p {
+    @include margin-top(28px);
+    @include margin-bottom(15px);
 
-        &:last-of-type,
-        &:last-child {
-            margin-bottom: 0;
-            @include mq($medium) {
-                margin-bottom: 0;
-            }
-        }
+    font-weight: normal;
+    // font-family: $inter;
+    @include font-size(16px);
+    line-height: 1.6;
 
+    @include mq($medium) {
+      @include margin-top(18px);
+      @include margin-bottom(18px);
     }
 
-    b,
-    strong {
-        font-weight: bold;
+    &:last-of-type,
+    &:last-child {
+      margin-bottom: 0;
+
+      @include mq($medium) {
+        margin-bottom: 0;
+      }
     }
 
-    em {
-        font-style: italic;
-    }
+  }
 
-    hr {
-        position: relative;
-        @include margin-top(15px);
-        @include margin-bottom(15px);
-        border: none;
-        height: 2px;
+  b,
+  strong {
+    font-weight: bold;
+  }
 
-        @include mq($medium) {
-            @include margin-top(64px);
-            @include margin-bottom(64px);
-        }
+  em {
+    font-style: italic;
+  }
 
-        &:before {
-            position: absolute;
-            top: 0;
-            left: 50%;
-            max-width: 720px;
-            width: 100%;
-            height: 2px;;
-            content: '';
-            background-color: #d1d1d6;
-            transform: translateX(-50%)
-        }
+  // hr {
+  //   position: relative;
+  //   @include margin-top(15px);
+  //   @include margin-bottom(15px);
+  //   border: none;
+  //   height: 2px;
 
-        & + p {
-            @include margin-top(15px);
+  //   @include mq($medium) {
+  //     @include margin-top(64px);
+  //     @include margin-bottom(64px);
+  //   }
 
-            @include mq($medium) {
-                @include margin-top(18px);
-            }
-        }
-    }
+  //   &:before {
+  //     position: absolute;
+  //     top: 0;
+  //     left: 50%;
+  //     max-width: 720px;
+  //     width: 100%;
+  //     height: 2px;
+  //     ;
+  //     content: '';
+  //     background-color: #d1d1d6;
+  //     transform: translateX(-50%)
+  //   }
 
-    blockquote {
-        border-left: 2px solid #000;
-        max-width: 338px;
-        @include margin-top(46px);
-        @include margin-bottom(46px);
-        @include padding-left(36px);
-        @include font-size(18px);
-        font-weight: normal;
-        font-style: italic;
-        line-height: 1.4;
+  //   &+p {
+  //     @include margin-top(15px);
 
-        @include mq($medium) {
-            @include margin-top(36px);
-            @include margin-bottom(36px);
-            @include padding-left(32px);
-        }
+  //     @include mq($medium) {
+  //       @include margin-top(18px);
+  //     }
+  //   }
+  // }
 
-        p {
-            margin-top: 0;
-            @include font-size(18px);
-            font-weight: normal;
-            line-height: 1.4;
-        }
-    }
+  // blockquote {
+  //   border-left: 2px solid #000;
+  //   max-width: 338px;
+  //   @include margin-top(46px);
+  //   @include margin-bottom(46px);
+  //   @include padding-left(36px);
+  //   @include font-size(18px);
+  //   font-weight: normal;
+  //   font-style: italic;
+  //   line-height: 1.4;
 
-    ul {
-        @include margin-top(40px);
-        @include margin-bottom(40px);
-        @include mq($medium) {
-            @include margin-top(40px);
-            @include margin-bottom(40px);
-        }
+  //   @include mq($medium) {
+  //     @include margin-top(36px);
+  //     @include margin-bottom(36px);
+  //     @include padding-left(32px);
+  //   }
 
-        li {
-            margin-left: 10px;
-            line-height: 2;
-            &:before {
-                @include margin-right(8px);
-                content: '-';
-                color: #086de0;
-            }
+  //   p {
+  //     margin-top: 0;
+  //     @include font-size(18px);
+  //     font-weight: normal;
+  //     line-height: 1.4;
+  //   }
+  // }
 
-            &:last-child {
-                margin-bottom: 0;
-            }
-        }
+  // ul {
+  //   @include margin-top(40px);
+  //   @include margin-bottom(40px);
 
-        &.list {
-            margin-top: 0;
-            margin-bottom: 10px;
-            @include mq($medium) {
-                margin-top: 22px;
-                margin-bottom: 0;
-            }
-            li {
-                margin-left: 0;
-            }
-        }
-    }
+  //   @include mq($medium) {
+  //     @include margin-top(40px);
+  //     @include margin-bottom(40px);
+  //   }
 
-    ol {
-        counter-reset: list;
-        li {
-            margin-left: 10px;
-            counter-increment: list;
-            line-height: 2;
-            &:before {
-                content: counter(list) '. ';
-                font-weight: bold;
-                font-size: 16px;
-            }
-        }
-    }
+  //   li {
+  //     margin-left: 10px;
+  //     line-height: 2;
+
+  //     &:before {
+  //       @include margin-right(8px);
+  //       content: '-';
+  //       color: #086de0;
+  //     }
+
+  //     &:last-child {
+  //       margin-bottom: 0;
+  //     }
+  //   }
+
+  //   &.list {
+  //     margin-top: 0;
+  //     margin-bottom: 10px;
+
+  //     @include mq($medium) {
+  //       margin-top: 22px;
+  //       margin-bottom: 0;
+  //     }
+
+  //     li {
+  //       margin-left: 0;
+  //     }
+  //   }
+  // }
+
+  // ol {
+  //   counter-reset: list;
+
+  //   li {
+  //     margin-left: 10px;
+  //     counter-increment: list;
+  //     line-height: 2;
+
+  //     &:before {
+  //       content: counter(list) '. ';
+  //       font-weight: bold;
+  //       font-size: 16px;
+  //     }
+  //   }
+  // }
 
 }
 

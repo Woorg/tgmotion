@@ -7,7 +7,7 @@ English description | <a href="../ru/css-processing.md">Описание на р
 You can use folowing CSS-preprocessors:
 * [Scss](http://sass-lang.com) .sass extension is supported;
 * [Less](http://www.lesscss.org);
-* [Stylus](http://learnboost.github.io/stylus)  
+* [Stylus](http://learnboost.github.io/stylus)
 
 You can choose CSS-preprocessor in [tars-config.js](options.md#csspreprocessor).
 
@@ -46,7 +46,7 @@ If you want to include the files from the static directory (pictures), you shoul
 
 ```scss
 .main {
-    background: url('%=static=%assets/main/bg.png') repeat;
+    background: url('../fonts/%=static=%assets/main/bg.png') repeat;
 }
 ```
 
@@ -68,4 +68,3 @@ There are a couple of points on the organization  of `scss|sass|less|styl` files
 If you'd like to use library from bower or npm package, you can import styles from package by using `@import`.
 
 For IE8 and IE9 you can add fixes in a folder in the ie component folder. You need to create `ie8.{scss,sass,css}` or `ie9.{scss,sass,css}`.
-

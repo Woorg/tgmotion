@@ -44,7 +44,7 @@ CSS-препроцессор выбирается в [tars-config.js](options.md
 
 ```scss
 .main {
-    background: url('%=static=%assets/main/bg.png') repeat;
+    background: url('../fonts/%=static=%assets/main/bg.png') repeat;
 }
 ```
 

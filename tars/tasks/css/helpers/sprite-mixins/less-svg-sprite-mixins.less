@@ -5,7 +5,7 @@
 }
 
 .bg-svg(@svg-sprite, @repeat: no-repeat) {
-    background-image: url('%=static=%svg-sprite/{{imgName}}');
+    background-image: url('../fonts/%=static=%svg-sprite/{{imgName}}');
     .svg-sprite-position(@svg-sprite);
     width: ~`"@{svg-sprite}".split(', ')[2]`;
     height: ~`"@{svg-sprite}".split(', ')[3]`;

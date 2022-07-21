@@ -1,0 +1,79 @@
+.audience {
+  // padding-bottom: 130px;
+  &__title {
+    margin-bottom: $margin-title-third;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  &__item {
+    position: relative;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    width: 33.3%;
+    height: 260px;
+    background: $color-black;
+    color: $color-white;
+    font-family: $sfpro;
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    @include tr(.3s ease);
+    &:hover {
+      box-shadow: 0px 15px 22px rgba(0, 0, 0, 0.25);
+      @include tr(.3s ease);
+    }
+
+  }
+
+  &__item_1 {
+
+  }
+
+  &__item_2 {
+
+  }
+
+  &__item_3 {
+
+  }
+
+  &__item-bg {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__entry {
+    z-index: 1;
+    position: relative;
+  }
+
+
+  &__icon {
+    // margin-bottom: 7px;
+    display: inline-flex;
+  }
+
+  &__item-title {
+    margin-bottom: 6px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.187;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.166;
+
+  }
+
+}

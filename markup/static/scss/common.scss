@@ -5,26 +5,27 @@ html, body {
 }
 
 .page {
-    position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    background: #f3f4f5;
-    color: #191c1f;
+    background: $color-white;
+    color: $color-black;
     font-display: swap;
-    font-family: $montserrat;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.25;
+    font-family: $manrope;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.388;
 
     &__wrapper {
-        position: relative;
-        flex-grow: 1;
-        flex-shrink: 0;
-        flex-basis: auto;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
         overflow: hidden;
     }
 
+    &__main {
+        flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: auto;
+        // overflow: hidden;
+    }
 
 }
 
@@ -42,13 +43,12 @@ html, body {
     min-width: 320px;
     max-width: 100%;
     @include mq($small) {
-        padding-right: 40px;
-        padding-left: 40px;
+
     }
     @include mq($large) {
         // padding-right: 30px;
         // padding-left: 30px;
-        max-width: 1260px;
+        max-width: 1540px;
     }
 }
 

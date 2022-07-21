@@ -112,8 +112,8 @@ tars.skipTaskLog = function skipTaskLog(taskName, reason) {
 /**
  * Beginning of a path for static files for using in css
  * You have to use %=static=% or __static__ placeholder in paths to static in css files
- * Example: background: url('%=static=%logo.png');
- * Will be replaced to background: url('../img/logo.png');
+ * Example: background: url('../fonts/%=static=%logo.png');
+ * Will be replaced to background: url('../fonts/../img/logo.png');
  * %=staticPrefixForCss=% prefix works, but it is deprecated!
  */
 tars.config.staticPrefixForCss = `../${tars.config.fs.imagesFolderName}/`;

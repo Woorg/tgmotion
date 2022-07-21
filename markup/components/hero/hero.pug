@@ -1,49 +1,49 @@
 mixin hero(data)
-    section.hero
+    section.hero&attributes(attributes)
         .hero__container.container
+            .hero__entry
+                h1.hero__title.title Эффективное продвижение в Telegram.
+                .hero__text
+                    p Привлеки внимание ЦА (целевой аудитории) и донеси до нее информацию о своем товаре, услуге или новости!
 
-            h1.hero__title.title <span>Email-маркетинг<i>,</i></span> который работает
-            .hero__text
-                p Выстраиваем email-маркетинг под ключ, учим бренды продавать посредством email, строим автоворонки. Работаем со всеми сегментами бизнеса.
+                .hero__buttons
+                    a.hero__button.button(href="#") Заказать услугу
+                    a.hero__button.button.button_stroke(href="#") Узнать больше о других услугах
 
-            a.hero__button.button(href="#request") Написать нам
+            ul.hero__advertising.advertising
+                li.advertising__item.advertising__item_active
+                    a.advertising__link(href="#")
+                        span.advertising__text Реклама в Telegram
+                        != pugHelpers.Icon.call(locals, {iconName: 'telegram-icon', className: 'advertising__icon'})
+                li.advertising__item.advertising__item_inst
+                    a.advertising__link(href="#")
+                        span.advertising__text  Реклама в Инстаграм
+                        != pugHelpers.Icon.call(locals, {iconName: 'instagram-icon', className: 'advertising__icon'})
+                li.advertising__item.advertising__item_discord
+                    a.advertising__link(href="#")
+                        span.advertising__text Реклама в Дискорд
+                        != pugHelpers.Icon.call(locals, {iconName: 'discord-icon', className: 'advertising__icon'})
+                li.advertising__item.advertising__item_vk
+                    a.advertising__link(href="#")
+                        span.advertising__text Реклама в ВК
+                        != pugHelpers.Icon.call(locals, {iconName: 'vk-icon', className: 'advertising__icon'})
 
-        picture.hero__image
+            != pugHelpers.Icon.call(locals, {iconName: 'hero-path', className: 'hero__path'})
 
-            source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-desktop@2x.webp" media="(min-width: 960px)")
-            source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-desktop@2x.png" media="(min-width: 960px)")
+            picture.hero__image
+                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-img-desktop@2x.webp" media="(min-width: 960px)")
+                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-img-desktop@2x.png" media="(min-width: 960px)")
 
-            source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-tablet@2x.webp" media="(min-width: 640px)")
-            source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-tablet@2x.png" media="(min-width: 640px)")
+                //- source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-tablet@2x.webp" media="(min-width: 640px)")
+                //- source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-tablet@2x.png" media="(min-width: 640px)")
 
-            source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-mob@2x.webp" )
-            source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-mob@2x.png" )
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-img-mob@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-img-mob@2x.png" )
 
-            img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/hero-bg-desktop.png" )
-
-
-
-mixin hero-en(data)
-    section.hero
-        .hero__container.container
-
-            h1.hero__title.title <span>Email marketing</span> that works
-            .hero__text
-                p We build turnkey email marketing, teach brands to sell via email, and build autoworks. We work with all business segments.
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/hero-img-desktop.png" )
 
 
-            a.hero__button.button(href="#request") Write to us
 
 
-        picture.hero__image
 
-            source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-desktop@2x.webp" media="(min-width: 960px)")
-            source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-desktop@2x.png" media="(min-width: 960px)")
-
-            source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-tablet@2x.webp" media="(min-width: 640px)")
-            source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-tablet@2x.png" media="(min-width: 640px)")
-
-            source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-mob@2x.webp" )
-            source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-mob@2x.png" )
-
-            img.lazy(src="static/img/general/placeholder-image.webp" alt="Image", data-src="static/img/general/hero-bg-desktop.png" )
+        .hero__circle.circle

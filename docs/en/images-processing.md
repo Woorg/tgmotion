@@ -68,7 +68,7 @@ They are located in the assets folder inside the component. To include image usi
 
 ```css
 .componentName {
-    background: url('%=static=%assets/componentName/sample-image-name.png') no-repeat;
+    background: url('../fonts/%=static=%assets/componentName/sample-image-name.png') no-repeat;
 }
 ```
 

@@ -1,106 +1,130 @@
 .hero {
+  position: relative;
+  // overflow: hidden;
+
+  &__image {
+    z-index: -1;
+    position: absolute;
+    // top: -24px;
+    // left: 50%;
+    // width: 375px;
+    // height: 253px;
+    display: block;
+    // transform: translateX(-50%);
+
+    @include mq($small) {
+      // top: 9px;
+      // left: calc(50% + 10px);
+      // width: 1023px;
+      // height: 411px;
+    }
+
+    @include mq($medium) {
+      top: 0;
+      right: 0;
+      width: 924px;
+      height: 690px;
+      transform: translateX(72px);
+    }
+
+    @include mq($large) {
+      // top: 0;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      @include mq($xlarge) {
+
+      }
+    }
+  }
+
+  &__path {
+    z-index: -1;
+    position: absolute;
+    top: -130px;
+    left: 258px;
+    width: 784px;
+    height: 674px;
+  }
+
+  &__circle {
+    top: 36px;
+    left: -148px;
+  }
+
+
+  &__container {
     position: relative;
-    overflow: hidden;
-    &__image {
-        z-index: -1;
-        position: absolute;
-        top: -24px;
-        left: 50%;
-        width: 375px;
-        height: 253px;
-        display: block;
-        transform: translateX(-50%);
-        @include mq($small) {
-            top: 9px;
-            left: calc(50% + 10px);
-            width: 1023px;
-            height: 411px;
-        }
+    padding-top: 130px;
+    padding-bottom: 44px;
 
-        @include mq($medium) {
-            top: 32px;
-            left: calc(50% - 20px);
-            width: 1701px;
-            height: 722px;
-        }
-
-        @include mq($xlarge) {
-            top: 0;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            @include mq($xlarge) {
-
-            }
-        }
+    @include mq($small) {
+      padding-top: 105px;
+      padding-bottom: 140px;
     }
 
-    &__container {
-        padding-top: 236px;
-        padding-bottom: 0;
-        text-align: center;
-        color: #222;
-        font-family: $sfpro;
+    @include mq($medium) {
+      // padding-top: 116px;
+      // padding-bottom: 130px;
+    }
+  }
 
-        @include mq($small) {
-            padding-top: 56px;
-            padding-bottom: 65px;
-        }
+  &__entry {
+    z-index: 1;
+    position: relative;
+  }
 
-        @include mq($medium) {
-            padding-top: 116px;
-            padding-bottom: 130px;
-        }
+  &__title {
+    margin-bottom: 40px;
+    max-width: 628px;
+    @include mq($small) {
+      // margin-bottom: 40px;
     }
 
-    &__title {
-        margin-bottom: 15px;
+    @include mq($medium) {
 
-        span {
-            display: flex;
-            justify-content: center;
-        }
-
-        @include mq($small) {
-            margin-bottom: 30px;
-        }
-
-        @include mq($medium) {
-        }
     }
+  }
 
-    &__text {
-        margin: auto;
-        max-width: 510px;
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 1.4;
+  &__text {
+    max-width: 534px;
 
-        @include mq($small) {
-            font-size: 14px;
-        }
-
-        @include mq($medium) {
-            max-width: 744px;
-            @include font-size(20px);
-        }
+    @include mq($small) {
 
     }
 
-    &__button {
-        margin-top: 40px;
-        width: 100%;
-        @include mq($small) {
-            margin-top: 50px;
-            width: auto;
-        }
-
-        @include mq($medium) {
-        }
+    @include mq($medium) {
 
     }
+
+  }
+
+  &__buttons {
+    margin-top: 40px;
+  }
+
+  &__button {
+    // width: 100%;
+    margin-right: 13px;
+    @include mq($small) {
+      // width: auto;
+    }
+
+    @include mq($medium) {
+
+    }
+
+  }
+
+  &__advertising {
+    z-index: 1;
+    position: absolute;
+    top: 94px;
+    right: 30px;
+  }
 
 }

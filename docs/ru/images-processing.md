@@ -71,7 +71,7 @@ TARS поддерживает работу с двумя форматами из
 
 ```css
 .componentName {
-    background: url('%=static=%assets/componentName/sample-image-name.png') no-repeat;
+    background: url('../fonts/%=static=%assets/componentName/sample-image-name.png') no-repeat;
 }
 ```
 

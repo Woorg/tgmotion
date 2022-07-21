@@ -1,0 +1,92 @@
+mixin reviews(data)
+    section.reviews
+        .reviews__container.container
+            h2.reviews__title.title.title_secondary <span>06</span> Отзывы о нас.
+
+            .reviews__slider
+                .swiper
+                    .swiper-wrapper
+                        .swiper-slide.reviews__slide
+                            .reviews__review
+                                .reviews__review-meta
+                                    .reviews__review-views
+                                        != pugHelpers.Icon.call(locals, {iconName: 'views-icon', className: 'reviews__review-icon '})
+                                        | 113
+
+                                    time.reviews__review-date(datetime='21:58') 21:58
+
+                                .reviews__review-entry
+                                    .reviews__review-title Отзывы <br/>Forwarded from Виктория
+                                    .reviews__review-text Человек отвечает на все вопросы, пока все нравится, посмотрим как дальше пойдет
+
+                            .reviews__review
+                                .reviews__review-meta
+                                    .reviews__review-views
+                                        != pugHelpers.Icon.call(locals, {iconName: 'views-icon', className: 'reviews__review-icon '})
+                                        | 74
+                                    time.reviews__review-date(datetime='14:03') 14:03
+
+                                .reviews__review-entry
+                                    .reviews__review-title Отзывы <br/>Forwarded from Виктория
+                                    .reviews__review-text 700₽ потратил не зря, спасибо за обучение
+
+
+
+                        .swiper-slide.reviews__slide
+                            .reviews__review
+                                .reviews__review-meta
+                                    .reviews__review-views
+                                        != pugHelpers.Icon.call(locals, {iconName: 'views-icon', className: 'reviews__review-icon '})
+                                        | 113
+                                    time.reviews__review-date(datetime='21:58') 21:58
+
+                                .reviews__review-entry
+                                    .reviews__review-title Отзывы <br/>Forwarded from Виктория
+                                    .reviews__review-text Человек отвечает на все вопросы, пока все нравится, посмотрим как дальше пойдет
+
+                            .reviews__review
+                                .reviews__review-meta
+                                    .reviews__review-views
+                                        != pugHelpers.Icon.call(locals, {iconName: 'views-icon', className: 'reviews__review-icon '})
+                                        | 74
+                                    time.reviews__review-date(datetime='14:03') 14:03
+
+                                .reviews__review-entry
+                                    .reviews__review-title Отзывы <br/>Forwarded from Виктория
+                                    .reviews__review-text 700₽ потратил не зря, спасибо за обучение
+
+                        .swiper-slide.reviews__slide
+                            .reviews__review
+
+                                .reviews__review-meta
+                                    .reviews__review-views
+                                        != pugHelpers.Icon.call(locals, {iconName: 'views-icon', className: 'reviews__review-icon '})
+                                        | 113
+                                    time.reviews__review-date(datetime='21:58') 21:58
+
+                                .reviews__review-entry
+                                    .reviews__review-title Отзывы <br/>Forwarded from Виктория
+                                    .reviews__review-text Человек отвечает на все вопросы, пока все нравится, посмотрим как дальше пойдет
+
+
+                            .reviews__review
+                                .reviews__review-meta
+                                    .reviews__review-views
+                                        != pugHelpers.Icon.call(locals, {iconName: 'views-icon', className: 'reviews__review-icon '})
+                                        | 74
+                                    time.reviews__review-date(datetime='14:03') 14:03
+
+                                .reviews__review-entry
+                                    .reviews__review-title Отзывы <br/>Forwarded from Виктория
+                                    .reviews__review-text 700₽ потратил не зря, спасибо за обучение
+
+
+
+
+                    //- .swiper-pagination
+                    //- .swiper-button-prev
+                    //- .swiper-button-next
+
+            .reviews__buttons.buttons
+                a.reviews__button.button(href="#") Оставить отзыв
+                a.reviews__button.button.button_stroke(href="#") Все отзывы

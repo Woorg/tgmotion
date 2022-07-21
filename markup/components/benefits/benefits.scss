@@ -1,0 +1,90 @@
+.benefits {
+
+  &__container {
+    padding-top: 115px;
+    padding-bottom: 115px;
+  }
+
+  &__title {
+    margin-bottom: $margin-title-secondary;
+  }
+
+  &__slider {
+    .swiper-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 0 20px;
+    }
+  }
+
+  &__slide {
+    padding-top: 22px;
+    padding-right: 29px;
+    padding-bottom: 22px;
+    padding-left: 29px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0 20px;
+    width: 33.3%;
+    height: 132px;
+    background: $color-black;
+    color: $color-white;
+    border-radius: 6px;
+
+    &:nth-child(1) {
+      width: 46%;
+    }
+
+
+    &:nth-child(2),
+    &:last-child {
+      width: 40%;
+    }
+
+    &:nth-child(3) {
+      width: 30%;
+    }
+
+    &:nth-child(4) {
+      width: 32%;
+    }
+
+
+    &:nth-child(5) {
+      width: 34%;
+    }
+
+  }
+
+  &__icon {
+    max-width: 88px;
+    width: 100%;
+    flex-shrink: 0;
+  }
+
+  &__text {
+    // margin-right: -20px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.375;
+    // word-break: break-all;
+
+    @include mq($small) {
+      @include font-size(32px);
+    }
+
+
+  }
+
+  &__pagination {
+
+  }
+
+  .swiper-pagination-bullet {
+    color: $color-darkblue;
+
+  }
+
+}

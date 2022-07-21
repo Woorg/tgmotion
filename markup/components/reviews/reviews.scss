@@ -1,0 +1,109 @@
+.reviews {
+
+  &__container {
+    padding-top: 130px;
+    // padding-bottom: 130px;
+  }
+
+  &__title {
+    margin-bottom: $margin-title-secondary;
+  }
+
+  &__slider {
+
+
+    .swiper-wrapper {
+      height: auto !important;
+    }
+  }
+
+  &__slide {
+    max-width: 33.3%;
+    width: 100%;
+    height: auto;
+    pointer-events: all;
+  }
+
+  &__review {
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 19px;
+    padding-right: 21px;
+    padding-bottom: 19px;
+    padding-left: 28px;
+    display: flex;
+    align-items: center;
+    background-image: url("data:image/svg+xml,%3Csvg width='480' height='142' viewBox='0 0 480 142' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.86885 6C7.86885 2.68629 10.5551 0 13.8689 0H474C477.314 0 480 2.68629 480 6V136C480 139.314 477.314 142 474 142H0L6.27181 135.225C7.29851 134.116 7.86885 132.66 7.86885 131.149V6Z' fill='%23272D4E'/%3E%3C/svg%3E%0A");
+    background-size: cover;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    border-radius: 0 8px 8px 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+  }
+
+  &__review-entry {
+
+  }
+
+  &__review-title {
+    margin-bottom: 4px;
+    color: $color-blue;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.388;
+
+    @include mq($small) {
+      @include font-size(18px);
+    }
+
+  }
+
+  &__review-meta {
+    position: absolute;
+    top: 19px;
+    right: 21px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 7px;
+    color: #595F7F;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.333;
+  }
+
+  &__review-views {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3px;
+  }
+
+  &__review-icon {
+    fill: transparent;
+  }
+
+  &__review-date {
+    // margin-bottom: ;
+  }
+
+  &__review-text {
+
+    font-family: $sfpro;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $color-white;
+  }
+
+  &__buttons  {
+    margin-top: 60px;
+  }
+
+  &__button {
+
+  }
+
+}

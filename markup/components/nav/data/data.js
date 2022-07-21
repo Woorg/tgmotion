@@ -1,35 +1,35 @@
 nav: {
     primaryListRu: [
         {
-            title: 'Услуги',
-            href: 'https://adcome.ru/services/',
+            title: 'Цена',
+            href: '/#',
             itemClassMod: ''
         },
         {
-            title: 'Кейсы',
-            href: 'https://adcome.ru/cases/',
+            title: 'Преимущества',
+            href: '/#',
             itemClassMod: '',
         },
         {
-            title: 'О нас',
-            href: 'https://adcome.ru/about/',
+            title: 'Примеры рассылок',
+            href: '/#',
             itemClassMod: '',
         },
         {
-            title: 'Вакансии',
-            href: 'https://adcome.ru/job/',
+            title: 'Отзывы',
+            href: '/#',
             itemClassMod: '',
         },
         {
-            title: 'Блог',
-            href: 'https://adcome.ru/blog/',
+            title: 'Наш канал',
+            href: '/#',
             itemClassMod: ''
         },
     ],
     primaryListEn: [
         {
             title: 'Services',
-            href: 'https://adcome.ru/services/',
+            href: '/#',
             itemClassMod: ''
         },
         {
