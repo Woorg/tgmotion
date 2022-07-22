@@ -84,6 +84,7 @@
   white-space: nowrap;
   cursor: pointer;
   border-radius: 6px;
+  pointer-events: all;
   @include tr(.3s ease);
 
   @include mq($small) {

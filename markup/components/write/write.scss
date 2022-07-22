@@ -7,7 +7,8 @@
     align-items: flex-start;
     flex-wrap: wrap;
     @include mq($medium) {
-      gap: 0 60px;
+      // gap: 0 60px;
+      justify-content: space-between;
       flex-wrap: nowrap;
     }
   }
@@ -78,7 +79,12 @@
 
 
   &__entry {
-
+    // margin-right: 0;
+    max-width: 670px;
+    width: 100%;
+    @include mq($medium) {
+      // margin-right: 60px;
+    }
   }
 
   &__title {
@@ -96,6 +102,7 @@
 
   &__button {
     margin-top: 24px;
+    pointer-events: all;
     @include mq($medium) {
       margin-top: 40px;
     }
@@ -117,7 +124,7 @@
       right: 0;
       margin-top: -200px;
       margin-right: 0;
-      width: auto;
+      width: 690px;
       height: auto;
       transform: translateX(0px);
     }

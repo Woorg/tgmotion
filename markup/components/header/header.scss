@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    gap: 30px;
+    // gap: 30px;
     height: 130px;
     // flex-wrap: wrap;
 
@@ -45,7 +45,8 @@
     order: 2;
 
     @include mq($small) {
-
+      margin-left: 30px;
+      margin-right: 30px;
 
     }
 
@@ -59,10 +60,13 @@
 
 
   &__langs {
-    // margin-right: 30px;
+    margin-right: 30px;
+
+    @include mq($small) {
+      margin-right: 0;
+    }
 
     @include mq($medium) {
-      margin-right: 0;
       order: 2;
     }
 

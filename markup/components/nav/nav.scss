@@ -131,6 +131,7 @@
     line-height: 1.5;
     text-align: center;
     white-space: nowrap;
+    pointer-events: all;
     @include tr(.3s ease);
 
     @include mq($medium) {
@@ -200,6 +201,7 @@
   .nav__link {
     padding-top: 10px;
     padding-bottom: 10px;
+    pointer-events: all;
   }
 
 }

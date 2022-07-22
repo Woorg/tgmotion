@@ -23,7 +23,6 @@
     padding-left: 8px;
     display: flex;
     align-items: center;
-    gap: 3px;
     background: transparent;
     font-family: $sfpro;
     font-weight: 600;
@@ -31,6 +30,7 @@
     line-height: 1;
     text-transform: uppercase;
     border-radius: 6px;
+    pointer-events: all;
     @include tr(.3s ease);
 
     @include mq($small) {
@@ -48,6 +48,7 @@
   }
 
   &__icon {
+    margin-right: 4px;
     width: 14px;
     height: 14px;
     @include mq($small) {

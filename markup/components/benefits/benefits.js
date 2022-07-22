@@ -44,7 +44,7 @@ export function benefitsSlider() {
                 loop: false,
                 // slidesPerView: 3,
                 slidesPerView: 'auto',
-
+                spaceBetween: 20,
                 // spaceBetween: 20,
             }
         }
