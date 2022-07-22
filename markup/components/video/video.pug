@@ -1,9 +1,13 @@
 mixin video(data)
     section.video&attributes(attributes)
-        h3.video__title.title.title_third Видео о нашем сервисе
-        .video__w
-            video.video__object(controls='' src='https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4' poster='static/img/general/video-placeholder.webp' )
+        .video__container.container
 
-                source(src='https://archive.org/download/ElephantsDream/ed_hd.ogv' type='video/ogg')
-                source(src='https://archive.org/download/ElephantsDream/ed_hd.avi' type='video/avi')
-                source(src='https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4' type='video/mp4')
+            != pugHelpers.Icon.call(locals, {iconName: 'video-path', className: 'video__path'})
+
+            h3.video__title.title.title_third Видео о нашем сервисе
+            .video__w
+                video.video__object(controls='' src='https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4' poster='static/img/general/video-placeholder.webp' )
+
+                    source(src='https://archive.org/download/ElephantsDream/ed_hd.ogv' type='video/ogg')
+                    source(src='https://archive.org/download/ElephantsDream/ed_hd.avi' type='video/avi')
+                    source(src='https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4' type='video/mp4')

@@ -5,7 +5,7 @@ export function includedSlider() {
         modules: [ Navigation, Pagination ],
         a11y: true,
         keyboardControl: true,
-        grabCursor: true,
+        // grabCursor: true,
         preloadImages: true,
         lazy: true,
         autoHeight: true,
@@ -31,12 +31,12 @@ export function includedSlider() {
         },
         breakpoints: {
             0: {
-                slidesPerView: 1,
+                slidesPerView: 'auto',
                 // spaceBetween: 10,
                 loop: false,
             },
             768: {
-                slidesPerView: 3,
+                slidesPerView: 'auto',
                 // spaceBetween: 10,
                 loop: false,
             },

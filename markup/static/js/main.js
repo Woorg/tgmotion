@@ -12,7 +12,6 @@ import { reviewsSlider } from '../../components/reviews/reviews';
 // import { validateForms, validateFormsEn } from '../../components/form/form';
 // import {pageWidget} from '../../components/page-widget/page-widget';
 
-
 document.addEventListener('DOMContentLoaded', function (event) {
 
     svg4everybody();

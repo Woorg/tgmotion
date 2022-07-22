@@ -22,6 +22,7 @@
         <link rel="preload" href="static/fonts/hinted-subset-Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="static/fonts/hinted-subset-Manrope-Semibold.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="static/fonts/hinted-subset-Inter-Bold.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="static/css/separate-css/glightbox.min.css" as="style">
         <link rel="preload" href="static/css/separate-css/swiper-bundle.min.css" as="style">
         <link rel="preload" href="static/css/main.min.css" as="style">
         <link rel="preload" href="static/js/main.min.js" as="script">
@@ -123,14 +124,14 @@
                         </svg>
 
                         <picture class="hero__image">
-                            <source type="image/webp" srcset="static/img/general/placeholder-image.webp" data-srcset="static/img/general/hero-img-desktop@2x.webp" media="(min-width: 960px)">
-                                <source type="image/png" srcset="static/img/general/placeholder-image.png" data-srcset="static/img/general/hero-img-desktop@2x.png" media="(min-width: 960px)">
+                            <source type="image/webp" srcset="static/img/general/placeholder-image.webp" data-srcset="static/img/general/hero-img-desktop@2x.webp" media="(min-width: 592px)">
+                                <source type="image/png" srcset="static/img/general/placeholder-image.png" data-srcset="static/img/general/hero-img-desktop@2x.png" media="(min-width: 592px)">
                                     <source type="image/webp" media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp" data-srcset="static/img/general/hero-img-mob@2x.webp">
                                         <source type="image/png" media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png" data-srcset="static/img/general/hero-img-mob@2x.png">
                                             <img class="lazy" src="static/img/general/placeholder-image.webp" alt="Изображение" data-src="static/img/general/hero-img-desktop.png">
                         </picture>
+                        <div class="hero__circle circle"></div>
                     </div>
-                    <div class="hero__circle circle"></div>
                 </section>
                 <section class="included">
                     <div class="included__container container">
@@ -183,16 +184,16 @@
                                 <div class="included__controls-w">
                                     <div class="included__buttons slider__buttons">
                                         <button class="slider__button slider__button_prev swiper-button-prev">
-                                            <svg class="slider__button-arrow" width="64" height="65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="32.001" cy="32.003" r="32" transform="rotate(-90 32.001 32.003)" fill="#4ECAED" />
-                                                <path d="m30 25.003 7 7-7 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                            <svg class="slider__button-arrow" width="64px" height="65px">
+                                                <use xlink:href="svg-symbols.svg#slider-arrow"></use>
                                             </svg>
+
                                         </button>
                                         <button class="slider__button slider__button_next swiper-button-next">
-                                            <svg class="slider__button-arrow" width="64" height="65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <circle cx="32.001" cy="32.003" r="32" transform="rotate(-90 32.001 32.003)" fill="#4ECAED" />
-                                                <path d="m30 25.003 7 7-7 7" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+                                            <svg class="slider__button-arrow" width="64px" height="65px">
+                                                <use xlink:href="svg-symbols.svg#slider-arrow"></use>
                                             </svg>
+
                                         </button>
                                     </div>
                                     <div class="slider__pagination swiper-pagination"></div>
@@ -208,6 +209,9 @@
                                 <rect x="551.656" y="143.511" width="1015" height="247" rx="16" transform="rotate(-1.779 551.656 143.511)" />
                                 <rect x="1086.4" y="126.903" width="917" height="247" rx="16" transform="rotate(-1.779 1086.4 126.903)" />
                             </g>
+                        </svg>
+                        <svg class="included__slider-bg included__slider-bg_mob" width="375" height="301" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="-165" y="53.6788" width="1729" height="247" rx="16" transform="rotate(-1.77891 -165 53.6788)" fill="#4ECAED" fill-opacity="0.05" />
                         </svg>
                     </div>
                 </section>
@@ -275,6 +279,26 @@
                                 </a>
                             </article>
                         </div>
+                        <div class="pricing__circle circle"></div>
+                        <div class="pricing__circle pricing__circle_2 circle"></div>
+                        <svg class="pricing__path" width="953px" height="499px">
+                            <use xlink:href="svg-symbols.svg#prices-path"></use>
+                        </svg>
+
+                        <svg class="pricing__path pricing__path_2" width="953px" height="499px">
+                            <use xlink:href="svg-symbols.svg#prices-path"></use>
+                        </svg>
+
+                        <picture class="pricing__tg pricing__tg_left">
+                            <source type="image/webp" media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp" data-srcset="static/img/general/prices-tg-left-desktop@2x.webp">
+                                <source type="image/png" media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png" data-srcset="static/img/general/prices-tg-left-desktop@2x.png">
+                                    <img class="lazy" src="static/img/general/placeholder-image.webp" alt="Изображение" data-src="static/img/general/prices-tg-left-desktop.png">
+                        </picture>
+                        <picture class="pricing__tg pricing__tg_right">
+                            <source type="image/webp" media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp" data-srcset="static/img/general/prices-tg-right-desktop@2x.webp">
+                                <source type="image/png" media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png" data-srcset="static/img/general/prices-tg-right-desktop@2x.png">
+                                    <img class="lazy" src="static/img/general/placeholder-image.webp" alt="Изображение" data-src="static/img/general/prices-tg-right-desktop.png">
+                        </picture>
                     </div>
                 </section>
                 <section class="benefits">
@@ -338,11 +362,23 @@
                             </div>
                         </div>
                     </div>
+                    <svg class="benefits__path" width="445px" height="695px">
+                        <use xlink:href="svg-symbols.svg#benefits-path-left"></use>
+                    </svg>
+
                 </section>
                 <section class="service">
                     <div class="service__container container">
                         <h2 class="service__title title title_secondary"><span>04</span> Сервис.</h2>
-                        <article class="write service__write">
+                    </div>
+                    <article class="write service__write">
+                        <div class="write__container container">
+                            <div class="write__circle circle"></div>
+                            <div class="write__circle write__circle_2 circle"></div>
+                            <svg class="write__path" width="611px" height="671px">
+                                <use xlink:href="svg-symbols.svg#write-path"></use>
+                            </svg>
+
                             <div class="write__entry">
                                 <h3 class="write__title title title_third">Как написать продающий текст и привлечь клиентов?</h3>
                                 <div class="write__text text">
@@ -350,14 +386,20 @@
                                 </div><a class="write__button button" href="#">Заказать у специалиста</a>
                             </div>
                             <picture class="write__image">
-                                <source type="image/webp" srcset="static/img/general/placeholder-image.webp" data-srcset="static/img/general/service-img-desktop@2x.webp" media="(min-width: 960px)">
-                                    <source type="image/png" srcset="static/img/general/placeholder-image.png" data-srcset="static/img/general/service-img-desktop@2x.png" media="(min-width: 960px)">
+                                <source type="image/webp" srcset="static/img/general/placeholder-image.webp" data-srcset="static/img/general/service-img-desktop@2x.webp" media="(min-width: 640px)">
+                                    <source type="image/png" srcset="static/img/general/placeholder-image.png" data-srcset="static/img/general/service-img-desktop@2x.png" media="(min-width: 640px)">
                                         <source type="image/webp" media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp" data-srcset="static/img/general/service-img-mob@2x.webp">
                                             <source type="image/png" media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png" data-srcset="static/img/general/service-img-mob@2x.png">
                                                 <img class="lazy" src="static/img/general/placeholder-image.webp" alt="Изображение" data-src="static/img/general/service-img-desktop.png">
                             </picture>
-                        </article>
-                        <section class="video service__video">
+                        </div>
+                    </article>
+                    <section class="video service__video">
+                        <div class="video__container container">
+                            <svg class="video__path" width="577px" height="682px">
+                                <use xlink:href="svg-symbols.svg#video-path"></use>
+                            </svg>
+
                             <h3 class="video__title title title_third">Видео о нашем сервисе</h3>
                             <div class="video__w">
                                 <video class="video__object" controls="" src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" poster="static/img/general/video-placeholder.webp">
@@ -366,8 +408,16 @@
                                             <source src="https://archive.org/download/ElephantsDream/ed_1024_512kb.mp4" type="video/mp4">
                                 </video>
                             </div>
-                        </section>
-                        <div class="audience service__audience">
+                        </div>
+                    </section>
+                    <div class="audience service__audience">
+                        <div class="audience__container container">
+                            <div class="audience__circle circle"></div>
+                            <div class="audience__circle audience__circle_2 circle"></div>
+                            <svg class="audience__path" width="337px" height="601px">
+                                <use xlink:href="svg-symbols.svg#audience-path"></use>
+                            </svg>
+
                             <h3 class="audience__title title title_third">Привлекаемая аудитория</h3>
                             <ul class="audience__list">
                                 <li class="audience__item">
@@ -2255,6 +2305,11 @@
                 </section>
                 <section class="examples">
                     <div class="examples__container container">
+                        <div class="examples__circle circle"></div>
+                        <svg class="examples__path" width="337px" height="601px">
+                            <use xlink:href="svg-symbols.svg#audience-path"></use>
+                        </svg>
+
                         <h2 class="examples__title title title_secondary"><span>05</span> Примеры рассылки.</h2>
                         <div class="examples__gallery">
                             <a class="examples__item" href="static/img/content/examples-1-desktop@2x.webp">
@@ -2280,6 +2335,11 @@
                 </section>
                 <section class="reviews">
                     <div class="reviews__container container">
+                        <div class="reviews__circle circle"></div>
+                        <svg class="reviews__path" width="308px" height="398px">
+                            <use xlink:href="svg-symbols.svg#reviews-path"></use>
+                        </svg>
+
                         <h2 class="reviews__title title title_secondary"><span>06</span> Отзывы о нас.</h2>
                         <div class="reviews__slider">
                             <div class="swiper">

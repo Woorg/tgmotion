@@ -31,19 +31,12 @@ mixin hero(data)
             != pugHelpers.Icon.call(locals, {iconName: 'hero-path', className: 'hero__path'})
 
             picture.hero__image
-                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-img-desktop@2x.webp" media="(min-width: 960px)")
-                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-img-desktop@2x.png" media="(min-width: 960px)")
-
-                //- source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-bg-tablet@2x.webp" media="(min-width: 640px)")
-                //- source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-bg-tablet@2x.png" media="(min-width: 640px)")
+                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-img-desktop@2x.webp" media="(min-width: 592px)")
+                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-img-desktop@2x.png" media="(min-width: 592px)")
 
                 source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/hero-img-mob@2x.webp" )
                 source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/hero-img-mob@2x.png" )
 
                 img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/hero-img-desktop.png" )
 
-
-
-
-
-        .hero__circle.circle
+            .hero__circle.circle

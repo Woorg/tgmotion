@@ -1,5 +1,13 @@
 .logo {
-  max-width: 162px;
+  max-width: 104px;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  @include mq($small) {
+    max-width: 162px;
+  }
+
   &__icon {
     width: 100%;
   }

@@ -1,19 +1,42 @@
 .video {
-  text-align: center;
+  text-align: left;
+  @include mq($medium) {
+    text-align: center;
+  }
+
+  &__container {
+    position: relative;
+  }
+
+  &__path {
+    position: absolute;
+    width: 292px;
+    height: 372px;
+    bottom: -200px;
+    left: -72px;
+    transform: rotate(1.84deg);
+
+  }
+
   &__title {
-    margin-bottom: $margin-title-third;
+    margin-bottom: $margin-title-third-mob;
+    @include mq($medium) {
+      margin-bottom: $margin-title-third;
+    }
   }
 
   &__w {
     border: 2px solid $color-black;
-    // margin: auto;
-    // margin-right: auto;
-    // margin-left: auto;
-    width: 873px;
-    height: 491px;
+    max-width: 873px;
+    width: 100%;
+    min-height: 174px;
     display: inline-flex;
     overflow: hidden;
     border-radius: 6px;
+    @include mq($medium) {
+      min-height: 491px;
+
+    }
   }
 
   &__object {

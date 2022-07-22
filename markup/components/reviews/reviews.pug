@@ -1,6 +1,14 @@
 mixin reviews(data)
     section.reviews
         .reviews__container.container
+
+
+            .reviews__circle.circle
+            //- .reviews__circle.reviews__circle_2.circle
+
+            != pugHelpers.Icon.call(locals, {iconName: 'reviews-path', className: 'reviews__path'})
+
+
             h2.reviews__title.title.title_secondary <span>06</span> Отзывы о нас.
 
             .reviews__slider

@@ -18,7 +18,7 @@ export function reviewsSlider() {
         speed: 600,
         freeMode: {
             enabled: true,
-            sticky: false,
+            sticky: true,
         },
         // pagination: {
         //     el: '.reviews__slider .swiper-pagination',

@@ -31,12 +31,12 @@ export function benefitsSlider() {
         // },
         breakpoints: {
             0: {
-                slidesPerView: 1,
+                slidesPerView: 'auto',
                 spaceBetween: 10,
                 loop: false,
             },
             768: {
-                slidesPerView: 3,
+                slidesPerView: 'auto',
                 spaceBetween: 20,
                 loop: false,
             },

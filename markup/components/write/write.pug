@@ -1,19 +1,23 @@
 mixin write(data)
     article.write&attributes(attributes)
-        .write__entry
-            h3.write__title.title.title_third Как написать продающий текст и привлечь клиентов?
-            .write__text.text
-                p 70% эффективности рекламы зависит от правильно составленного промо текста. Наш специалист с опытом и насмотренностью какая реклама работает лучше, поможет вам.
-            a.write__button.button(href="#") Заказать у специалиста
+        .write__container.container
 
-        picture.write__image
-            source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-img-desktop@2x.webp" media="(min-width: 960px)")
-            source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-img-desktop@2x.png" media="(min-width: 960px)")
+            .write__circle.circle
+            .write__circle.write__circle_2.circle
 
-            //- source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-bg-tablet@2x.webp" media="(min-width: 640px)")
-            //- source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-bg-tablet@2x.png" media="(min-width: 640px)")
+            != pugHelpers.Icon.call(locals, {iconName: 'write-path', className: 'write__path'})
 
-            source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-img-mob@2x.webp" )
-            source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-img-mob@2x.png" )
+            .write__entry
+                h3.write__title.title.title_third Как написать продающий текст и привлечь клиентов?
+                .write__text.text
+                    p 70% эффективности рекламы зависит от правильно составленного промо текста. Наш специалист с опытом и насмотренностью какая реклама работает лучше, поможет вам.
+                a.write__button.button(href="#") Заказать у специалиста
 
-            img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/service-img-desktop.png" )
+            picture.write__image
+                source(type="image/webp", srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-img-desktop@2x.webp" media="(min-width: 640px)")
+                source(type="image/png", srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-img-desktop@2x.png" media="(min-width: 640px)")
+
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/service-img-mob@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/service-img-mob@2x.png" )
+
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/service-img-desktop.png" )

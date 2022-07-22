@@ -2,12 +2,29 @@
   background-color: $color-black;
 
   &__container {
-    padding-top: 27px;
-    padding-bottom: 27px;
+    padding-top: 14px;
+    padding-bottom: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+
+    @include mq($small) {
+      padding-top: 27px;
+      padding-bottom: 27px;
+
+    }
+
+    @include mq($medium) {
+
+    }
+
+  }
+
+  &__logo {
+    // max-width: 162px;
+    // width: 100%;
+    // display: flex;
 
     @include mq($small) {
 
@@ -19,19 +36,11 @@
 
   }
 
-  &__logo {
-    max-width: 162px;
-    width: 100%;
-    display: flex;
-
-    @include mq($small) {
-
-    }
-
+  &__nav {
+    display: none;
     @include mq($medium) {
-
+      display: flex;
     }
-
   }
 
 }

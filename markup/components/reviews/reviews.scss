@@ -1,16 +1,49 @@
 .reviews {
 
   &__container {
-    padding-top: 130px;
+    position: relative;
+    padding-top: $padding-container-mob;
+    padding-bottom: $padding-container-mob;
+    @include mq($medium) {
+      padding-top: 130px;
+      padding-bottom: 0;
+    }
     // padding-bottom: 130px;
   }
 
+  &__circle {
+    bottom: 50px;
+    right: -80px;
+    width: 193px;
+    height: 193px;
+  }
+
+  // &__circle_2 {
+  //   top: auto;
+  //   left: auto;
+  //   right: 0;
+  //   bottom: -120px;
+  //   width: 193px;
+  // }
+
+  &__path {
+    z-index: -1;
+    position: absolute;
+    right: 13px;
+    bottom: -75px;
+    width: 118px;
+    // height: 398px;
+    transform: rotate(20.84deg);
+  }
+
   &__title {
-    margin-bottom: $margin-title-secondary;
+    margin-bottom: $margin-title-secondary-mob;
+    @include mq($medium) {
+      margin-bottom: $margin-title-secondary;
+    }
   }
 
   &__slider {
-
 
     .swiper-wrapper {
       height: auto !important;
@@ -18,10 +51,14 @@
   }
 
   &__slide {
-    max-width: 33.3%;
     width: 100%;
     height: auto;
     pointer-events: all;
+
+    @include mq($medium) {
+      max-width: 33.3%;
+
+    }
   }
 
   &__review {
@@ -52,7 +89,7 @@
     margin-bottom: 4px;
     color: $color-blue;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 1.388;
 
     @include mq($small) {
@@ -93,13 +130,22 @@
   &__review-text {
 
     font-family: $sfpro;
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.3571;
     color: $color-white;
+
+    @include mq($small) {
+      @include font-size(16px);
+      line-height: 1.5;
+    }
+
   }
 
   &__buttons  {
-    margin-top: 60px;
+    margin-top: 24px;
+    @include mq($medium) {
+      margin-top: 60px;
+    }
   }
 
   &__button {

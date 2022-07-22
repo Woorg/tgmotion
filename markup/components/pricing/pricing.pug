@@ -54,3 +54,24 @@ mixin pricing(data)
 
                         .pricing__button-w
                             span.pricing__button Заказать
+
+
+            .pricing__circle.circle
+            .pricing__circle.pricing__circle_2.circle
+
+            != pugHelpers.Icon.call(locals, {iconName: 'prices-path', className: 'pricing__path'})
+
+            != pugHelpers.Icon.call(locals, {iconName: 'prices-path', className: 'pricing__path pricing__path_2'})
+
+
+            picture.pricing__tg.pricing__tg_left
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/prices-tg-left-desktop@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/prices-tg-left-desktop@2x.png" )
+
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/prices-tg-left-desktop.png" )
+
+            picture.pricing__tg.pricing__tg_right
+                source(type="image/webp", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp", data-srcset="static/img/general/prices-tg-right-desktop@2x.webp" )
+                source(type="image/png", media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png", data-srcset="static/img/general/prices-tg-right-desktop@2x.png" )
+
+                img.lazy(src="static/img/general/placeholder-image.webp" alt="Изображение", data-src="static/img/general/prices-tg-right-desktop.png" )

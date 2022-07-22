@@ -1,6 +1,13 @@
 mixin examples(data)
     section.examples
         .examples__container.container
+
+            .examples__circle.circle
+            //- .examples__circle.examples__circle_2.circle
+
+            != pugHelpers.Icon.call(locals, {iconName: 'audience-path', className: 'examples__path'})
+
+
             h2.examples__title.title.title_secondary <span>05</span> Примеры рассылки.
 
             .examples__gallery

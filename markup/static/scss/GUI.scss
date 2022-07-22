@@ -1,23 +1,25 @@
 .title {
   font-family: $sfpro;
-  font-size: 85px;
+  font-size: 40px;
   font-weight: bold;
+  line-height: 1.2;
 
   @include mq($small) {
     @include font-size(85px);
   }
 
   @include mq($medium) {
-
+    line-height: 1.388;
   }
 
   &_secondary {
     font-weight: 600;
-    font-size: 48px;
-    line-height: 1.19;
+    font-size: 28px;
+    line-height: 1.178;
 
     @include mq($small) {
       @include font-size(48px);
+      line-height: 1.19;
     }
 
     @include mq($medium) {
@@ -25,18 +27,21 @@
     }
 
     span {
-      padding-right: 10px;
       color: $color-blue;
+
+      @include mq($medium) {
+        padding-right: 10px;
+      }
     }
   }
 
   &_third {
     font-weight: 500;
-    font-size: 48px;
-    line-height: 1.187;
-
+    font-size: 24px;
+    line-height: 1.208;
     @include mq($small) {
       @include font-size(48px);
+      line-height: 1.187;
     }
 
     @include mq($medium) {
@@ -51,7 +56,13 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 0 13px;
+  flex-wrap: wrap;
+  gap: 13px;
+
+  @include mq($medium) {
+    flex-wrap: nowrap;
+  }
+
 }
 
 .button {
@@ -67,7 +78,7 @@
   align-items: center;
   background: $color-blue;
   color: $color-white;
-  @include font-size(18px);
+  @include font-size(14px);
   font-weight: bold;
   line-height: 1.37;
   white-space: nowrap;
@@ -75,7 +86,9 @@
   border-radius: 6px;
   @include tr(.3s ease);
 
-  @include mq($small) {}
+  @include mq($small) {
+
+  }
 
   @include mq($medium) {
     @include font-size(18px);
@@ -106,6 +119,7 @@
 }
 
 .circle {
+  z-index: -1;
   position: absolute;
   background: $color-soft;
   border-radius: 50%;
@@ -116,10 +130,19 @@
 
 
   &__buttons {
+    width: 100px;
+    height: 44px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 7px;
+
+    @include mq($medium) {
+      width: auto;
+      height: auto;
+      gap: 7px;
+    }
+
+
   }
 
   &__button {
@@ -128,72 +151,85 @@
     right: auto;
     left: auto;
     @include resetbutton();
-    width: 64px;
-    height: 64px;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 1;
     background: transparent;
     fill: transparent;
     opacity: 1;
     transform: none;
     border-radius: 50%;
+    @include tr(.3s ease);
+    @include mq($medium) {
+      width: 64px;
+      height: 64px;
+    }
+
     &::after {
       display: none;
     }
 
-    circle {
-      // fill: transparent;
-      @include tr(.3s ease);
-    }
-
     &:hover {
+      background: $color-blue;
       box-shadow: 0px 12px 34px rgba(78, 202, 237, 0.23);
-      circle {
-        fill: $color-blue;
-        @include tr(.3s ease);
-      }
+      @include tr(.3s ease);
     }
 
   }
 
   &__button_prev {
+    background: $color-blue;
     transform: rotate(180deg);
+    @include tr(.3s ease);
     &.swiper-button-disabled {
-      circle {
-        fill: transparent;
-        @include tr(.3s ease);
-      }
-      fill: transparent;
+      background: transparent;
       opacity: 1;
+      &:hover {
+        box-shadow: none;
+      }
     }
   }
 
   &__button_next {
+    background: $color-blue;
+    @include tr(.3s ease);
     &.swiper-button-disabled {
-      circle {
-        fill: transparent;
-        @include tr(.3s ease);
-      }
-
-      fill: transparent;
+      background: transparent;
       opacity: 1;
+      &:hover {
+        box-shadow: none;
+      }
     }
 
   }
 
   &__pagination {
-    margin-top: 20px;
     position: static;
+    margin-top: 10px;
     display: flex;
     justify-content: center;
+
+    @include mq($medium) {
+      margin-top: 20px;
+    }
+
   }
 
   .swiper-pagination-bullet {
     margin-right: 10px;
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background: $color-darkblue;
     opacity: 1;
     border-radius: 50%;
     @include tr(.3s ease);
+
+    @include mq($medium) {
+      width: 8px;
+      height: 8px;
+    }
+
+
     &:last-child {
       margin-right: 0;
     }
