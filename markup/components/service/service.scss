@@ -1,7 +1,7 @@
 .service {
   padding-bottom: $padding-container-mob;
   padding-top: $padding-container-mob;
-  @include mq($medium) {
+  @include mq($large) {
     padding-top: 115px;
     padding-bottom: 115px;
   }

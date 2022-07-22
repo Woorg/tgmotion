@@ -9,6 +9,12 @@
     left: -61px;
     width: 141px;
     height: 141px;
+    @include mq($medium) {
+      top: -150px;
+      left: -333px;
+      width: 451px;
+      height: 451px;
+    }
   }
 
   &__circle_2 {
@@ -18,6 +24,12 @@
     bottom: -120px;
     width: 193px;
     height: 193px;
+    @include mq($medium) {
+      bottom: -190px;
+      right: -190px;
+      width: 337px;
+      height: 337px;
+    }
   }
 
   &__path {
@@ -28,6 +40,12 @@
     width: 292px;
     height: 372px;
     transform: rotate(-1.87deg);
+    @include mq($medium) {
+      right: -290px;
+      bottom: -460px;
+      width: 560px;
+      height: 714px;
+    }
   }
 
   &__title {

@@ -1,6 +1,7 @@
 .reviews {
 
   &__container {
+    z-index: 1;
     position: relative;
     padding-top: $padding-container-mob;
     padding-bottom: $padding-container-mob;
@@ -16,6 +17,14 @@
     right: -80px;
     width: 193px;
     height: 193px;
+
+    @include mq($medium) {
+      bottom: -100px;
+      right: -220px;
+      width: 298px;
+      height: 298px;
+    }
+
   }
 
   // &__circle_2 {
@@ -34,6 +43,16 @@
     width: 118px;
     // height: 398px;
     transform: rotate(20.84deg);
+
+
+    @include mq($medium) {
+      width: 560px;
+      right: -287px;
+      bottom: -255px;
+      transform: rotate(-1.16deg);
+      // height: 714px;
+    }
+
   }
 
   &__title {

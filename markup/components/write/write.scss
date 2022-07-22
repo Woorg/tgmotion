@@ -18,6 +18,14 @@
     left: -140px;
     width: 253px;
     height: 253px;
+
+    @include mq($medium) {
+      top: -85px;
+      left: -350px;
+      width: 451px;
+      height: 451px;
+    }
+
   }
 
   &__circle_2 {
@@ -27,7 +35,32 @@
     right: 126px;
     width: 140px;
     height: 140px;
+
+    @include mq($large) {
+      bottom: -70px;
+      right: 516px;
+      width: 306px;
+      height: 306px;
+    }
+
   }
+
+  &__circle_3 {
+    top: -120px;
+    left: auto;
+    right: -186px;
+    width: 306px;
+    height: 306px;
+    display: none;
+    @include mq($medium) {
+      top: -240px;
+      display: block;
+      width: 436px;
+      height: 436px;
+    }
+
+  }
+
 
   &__path {
     position: absolute;
@@ -38,7 +71,7 @@
     transform: rotate(38.7deg);
 
     @include mq($medium) {
-
+      display: none;
     }
 
   }

@@ -14,6 +14,14 @@
     left: -61px;
     width: 193px;
     height: 193px;
+
+    @include mq($medium) {
+      bottom: -230px;
+      left: -171px;
+      width: 451px;
+      height: 451px;
+    }
+
   }
 
   // &__circle_2 {
@@ -33,6 +41,15 @@
     width: 292px;
     height: 372px;
     transform: rotate(111deg);
+
+    @include mq($medium) {
+      left: -81px;
+      bottom: -410px;
+      width: 560px;
+      height: 714px;
+      transform: matrix(-0.97, -0.23, -0.23, 0.97, 0, 0) rotate(14deg);
+    }
+
   }
 
   &__title {

@@ -69,7 +69,7 @@
                         </ul>
                     </nav>
                     <div class="header__langs langs">
-                        <a class="langs__lang" href="/index-lang-eng.html">
+                        <a class="langs__lang" href="/index-en.html">
                             <svg class="langs__icon" width="21px" height="21px">
                                 <use xlink:href="svg-symbols.svg#lang-en"></use>
                             </svg>
@@ -361,11 +361,20 @@
                                 <div class="benefits__pagination swiper-pagination slider__pagination"></div>
                             </div>
                         </div>
-                    </div>
-                    <svg class="benefits__path" width="445px" height="695px">
-                        <use xlink:href="svg-symbols.svg#benefits-path-left"></use>
-                    </svg>
+                        <svg class="benefits__path" width="445px" height="695px">
+                            <use xlink:href="svg-symbols.svg#benefits-path-left"></use>
+                        </svg>
 
+                        <svg class="benefits__path benefits__path_2" width="557px" height="695px">
+                            <use xlink:href="svg-symbols.svg#benefits-path-right"></use>
+                        </svg>
+
+                        <picture class="benefits__tg">
+                            <source type="image/webp" media="(min-width: 240px)" srcset="static/img/general/placeholder-image.webp" data-srcset="static/img/general/benefits-tg-icon@2x.webp">
+                                <source type="image/png" media="(min-width: 240px)" srcset="static/img/general/placeholder-image.png" data-srcset="static/img/general/benefits-tg-icon@2x.png">
+                                    <img class="lazy" src="static/img/general/placeholder-image.webp" alt="Изображение" data-src="static/img/general/benefits-tg-icon.png">
+                        </picture>
+                    </div>
                 </section>
                 <section class="service">
                     <div class="service__container container">
@@ -375,6 +384,7 @@
                         <div class="write__container container">
                             <div class="write__circle circle"></div>
                             <div class="write__circle write__circle_2 circle"></div>
+                            <div class="write__circle write__circle_3 circle"></div>
                             <svg class="write__path" width="611px" height="671px">
                                 <use xlink:href="svg-symbols.svg#write-path"></use>
                             </svg>
@@ -398,6 +408,10 @@
                         <div class="video__container container">
                             <svg class="video__path" width="577px" height="682px">
                                 <use xlink:href="svg-symbols.svg#video-path"></use>
+                            </svg>
+
+                            <svg class="video__path video__path_2" width="611px" height="671px">
+                                <use xlink:href="svg-symbols.svg#video-path-2"></use>
                             </svg>
 
                             <h3 class="video__title title title_third">Видео о нашем сервисе</h3>

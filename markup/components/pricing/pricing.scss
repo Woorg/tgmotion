@@ -2,16 +2,20 @@
   position: relative;
 
   &__circle {
-    // z-index: -1;
     top: -90px;
     left: -105px;
     width: 164px;
     height: 164px;
+    @include mq($small) {
+      // display: none;
+    }
 
     @include mq($medium) {
-      left: -99px;
+      top: -54px;
+      left: -269px;
       width: 319px;
       height: 319px;
+      display: block;
     }
 
   }
@@ -22,6 +26,16 @@
     right: 35px;
     width: 99px;
     height: 99px;
+    @include mq($small) {
+      // display: none;
+    }
+    @include mq($medium) {
+      top: -137px;
+      right: 430px;
+      width: 294px;
+      height: 294px;
+      display: block;
+    }
   }
 
   &__path {
@@ -29,11 +43,18 @@
     position: absolute;
     top: -130px;
     right: -190px;
-    // width: 292px;
     width: 462px;
     height: 372px;
-    @include mq($medium) {
+    @include mq($small) {
+      // display: none;
+    }
 
+    @include mq($large) {
+      top: -70px;
+      left: 401px;
+      width: 1102px;
+      height: 712px;
+      display: block;
     }
   }
 
@@ -46,8 +67,19 @@
     width: 400px;
     height: 372px;
 
-    @include mq($medium) {
+    // @include mq($small) {
+    //   display: none;
+    // }
 
+    @include mq($large) {
+      right: -540px;
+      bottom: -420px;
+      left: auto;
+      width: 872px;
+      height: 619px;
+      display: block;
+
+      // transform: rotate(-33.08deg);
     }
   }
 
@@ -58,9 +90,17 @@
 
   &__tg_left {
     top: 0;
-    left: 0;
+    left: -87px;
     width: 106px;
     height: 74px;
+
+    @include mq($medium) {
+      left: -77px;
+      top: 53px;
+      width: 213px;
+      height: 148px;
+    }
+
   }
 
   &__tg_right {
@@ -68,9 +108,18 @@
     right: 30px;
     width: 116px;
     height: 80px;
+
+    @include mq($medium) {
+      top: 98px;
+      right: -120px;
+      width: 326px;
+      height: 227px;
+    }
+
   }
 
   &__container {
+    position: relative;
     padding-top: 100px;
     padding-bottom: $padding-container-mob;
     padding-bottom: $padding-container-mob;
@@ -90,7 +139,8 @@
   &__services {
     display: flex;
     flex-wrap: wrap;
-    @include mq($medium) {
+    @include mq($small) {
+      // flex-wrap: nowrap;
       gap: 20px;
     }
   }
@@ -104,7 +154,11 @@
     background-position: 100% 0;
     background-repeat: no-repeat;
     border-radius: 6px;
-    @include mq($medium) {
+
+    @include mq($small) {
+      width: 48%;
+    }
+    @include mq($large) {
       margin-bottom: 0;
       width: 23.9%;
     }

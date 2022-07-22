@@ -27,7 +27,8 @@
   &__entry {
     width: 100%;
     @include mq($large) {
-      max-width: 332px;
+      // max-width: 332px;
+      max-width: 372px;
     }
 
   }
@@ -124,7 +125,11 @@
     // margin-top: -160px;
     @include mq($small) {
       position: absolute;
+
       height: auto;
+    }
+    @include mq($medium) {
+      max-width: 1870px;
     }
     @include mq($large) {
 

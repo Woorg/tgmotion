@@ -28,28 +28,28 @@ nav: {
     ],
     primaryListEn: [
         {
-            title: 'Services',
+            title: 'Price',
             href: '/#',
             itemClassMod: ''
         },
         {
-            title: 'Cases',
-            href: 'https://adcome.ru/cases/',
+            title: 'Advantages',
+            href: '#',
             itemClassMod: '',
         },
         {
-            title: 'About Us',
-            href: 'https://adcome.ru/about/',
+            title: 'Examples of mailing',
+            href: '#',
             itemClassMod: '',
         },
         {
-            title: 'Vacancies',
-            href: 'https://adcome.ru/job/',
+            title: 'Reviews',
+            href: '#',
             itemClassMod: '',
         },
         {
-            title: 'Blog',
-            href: 'https://adcome.ru/blog/',
+            title: 'Our channel',
+            href: '#',
             itemClassMod: ''
         },
 

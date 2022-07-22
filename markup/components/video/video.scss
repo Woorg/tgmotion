@@ -15,7 +15,25 @@
     bottom: -200px;
     left: -72px;
     transform: rotate(1.84deg);
+    @include mq($medium) {
+      left: -202px;
+      bottom: -410px;
+      width: 560px;
+      height: 714px;
+    }
+  }
 
+  &__path_2 {
+    z-index: -1;
+    top: -450px;
+    bottom: auto;
+    left: 409px;
+    width: 560px;
+    height: 714px;
+    display: none;
+    @include mq($medium) {
+      display: block;
+    }
   }
 
   &__title {
@@ -26,6 +44,8 @@
   }
 
   &__w {
+    z-index: 1;
+    position: relative;
     border: 2px solid $color-black;
     max-width: 873px;
     width: 100%;
@@ -35,7 +55,6 @@
     border-radius: 6px;
     @include mq($medium) {
       min-height: 491px;
-
     }
   }
 
@@ -43,8 +62,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-
   }
-
 
 }
